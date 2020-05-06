@@ -1,4 +1,9 @@
-## Order Complete Fields & l.u.b axiom
+---
+title: Order Complete Fields
+description: Covers what an algebraic Field is and what it means for a Field to be order complete
+---
+
+## Order Complete Fields
 
 In [Algebra](https://en.wikipedia.org/wiki/Algebra), a Field is a 5-tuple,
 denoted by; $$\langle F, +, \cdot, e, u \rangle$$, where

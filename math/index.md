@@ -10,7 +10,8 @@ However, I will try to keep each write-up bit-size and easy to digest.
 
 The topics we would be discussing are:
 ### Mathematical Analysis
-1. [Order Complete Fields & l.u.b axiom](/mathanalysis/ordercompletefields.md)
+1. [Order Complete Fields](/mathanalysis/ordercompletefields.md)
+1. [The l.u.b axiom](/mathanalysis/lubaxiom.md)
 1. [Sequences](/mathanalysis/sequences.md)
 1. [Series](/mathanalysis/series.md)
 1. [Metric Spaces](/mathanalysis/metricspaces.md)

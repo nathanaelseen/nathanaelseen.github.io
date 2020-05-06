@@ -2,9 +2,7 @@
 <html lang="{{ site.lang | default: "en-US" }}">
   <head>
 
-    <title>{{ site.title }}</title>
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#157878">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -16,8 +14,8 @@
   </head>
   <body>
     <header class="page-header" role="banner">
-      <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
-      <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
+      <h1 class="project-name">{{ page.title | default: site.title }}</h1>
+      <h2 class="project-tagline">{{ page.description | default: site.description }}</h2>
       <a href="/" class="btn">Home</a>
       <a href="/compsci" class="btn">Computer Science</a>
       <a href="/math" class="btn">Mathematics</a>
