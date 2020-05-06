@@ -14,19 +14,19 @@
     {% endif %}
     <meta charset="UTF-8">
 
-{% seo %}
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#157878">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    {% seo %}
   </head>
   <body>
     <header class="page-header" role="banner">
       <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
       <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
       <a href="/" class="btn">Home</a>
-      <a href="/compsci" class="btn">Comp Sci</a>
-      <a href="/math" class="btn">Math</a>
+      <a href="/compsci" class="btn">Computer Science</a>
+      <a href="/math" class="btn">Mathematics</a>
       <a href="/tech" class="btn">Tech</a>
     </header>
 
@@ -40,5 +40,6 @@
           </span>
       </footer>
     </main>
+    {% include mathjax.html %}
   </body>
 </html>

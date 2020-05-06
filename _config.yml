@@ -27,6 +27,10 @@ description: >- # this means to ignore newlines until "baseurl:"
 theme: jekyll-theme-cayman
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
+
+# For math-jax (math notations)
+markdown: Kramdown
 
 # Exclude from processing.
 # The following items will not be processed, by default.

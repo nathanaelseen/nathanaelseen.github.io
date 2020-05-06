@@ -1,1 +1,1 @@
-## All the Tech stuffs here
+## Tech

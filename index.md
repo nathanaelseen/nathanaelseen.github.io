@@ -1,4 +1,4 @@
-## Home Page
+## Home
 
 Hi, thank you for visiting my personal website.
 

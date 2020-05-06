@@ -1,3 +1,3 @@
 ## Order Complete Fields & l.u.b axiom
 
-_(to be updated soon)_
+By that we mean that it's carrying the linear combination $$\begin{psmallmatrix} 1 \\ 0 \end{psmallmatrix}$$

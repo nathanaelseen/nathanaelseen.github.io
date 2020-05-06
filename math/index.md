@@ -1,4 +1,4 @@
-## All the Mathy stuffs here
+## Mathematics
 
 Hi, thank you for visiting this page.
 
