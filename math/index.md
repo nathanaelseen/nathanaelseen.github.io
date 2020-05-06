@@ -1,11 +1,14 @@
 ## Mathematics
 
-Hi, thank you for visiting this page.
+In this section, we discuss all the mathy stuffs.
 
-I will try to keep each topic bit-size and easy to digest. As such they would not have any
-sub-headings/titles or whatsoever, just a page dedicated for each of these small topics.
+As can be seen below, there are 4 broad categories of mathematics we would be covering.
 
-The topics I would be discussing are:
+Also under each category, there are many sub-topics.
+
+However, I will try to keep each write-up bit-size and easy to digest.
+
+The topics we would be discussing are:
 ### Mathematical Analysis
 1. [Order Complete Fields & l.u.b axiom](/mathanalysis/ordercompletefields.md)
 1. [Sequences](/mathanalysis/sequences.md)
