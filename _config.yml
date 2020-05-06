@@ -21,7 +21,7 @@
 title: Nathanael's Website
 email: coderatwork64@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-    Welcome to my personal website! In this space, I'll primarily write stuff about Computer Science, Math, and others.
+    Welcome to Nathanael's website!
 
 # Build settings
 theme: jekyll-theme-cayman
