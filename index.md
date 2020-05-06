@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Welcome to Nathanael's Website
 
 You can use the [editor on GitHub](https://github.com/nathanaelseen/personal_website/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 
