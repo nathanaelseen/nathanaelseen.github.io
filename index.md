@@ -1,6 +1,6 @@
-## Welcome to my personal website!
+## Home Page
 
-Hi, thank you for visiting this site.
+Hi, thank you for visiting my personal website.
 
 My name is Nathanael Seen, and I'm currently studying Computer Science (Mathematics minor) at [NUS](http://www.nus.edu.sg/).
 
