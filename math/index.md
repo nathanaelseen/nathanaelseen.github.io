@@ -30,7 +30,7 @@ The topics I would be discussing are:
 1. [Series](/mathanalysis/series.md)
 1. [Differential Calculus](/calculus/differentialcalculus.md)
 1. [Integral Calculus](/calculus/integralcalculus.md)
-1. [Differential Calculus (Multi-variables)](/calculus/differentialcalculusmultivar.md)
+1. [Differential Calculus (Multi-Variables)](/calculus/differentialcalculusmultivar.md)
 1. [Ordinary Differential Equations](/calculus/ordinarydifferentialequations.md)
 
 ### Linear Algebra
