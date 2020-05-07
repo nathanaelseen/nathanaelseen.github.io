@@ -8,7 +8,7 @@ description: Covers what an algebraic Field is and what it means for a Field to 
 In [Algebra](https://en.wikipedia.org/wiki/Algebra), a Field is a [Set](https://en.wikipedia.org/wiki/Set), by which two important
 operations, namely; **Addition** and **Multiplication**, over the elements (in the Set) are defined.
 
-_Definition:_
+_**Definition**_:
 A Field is a 5-tuple, denoted by; $$\langle F, +, \cdot, e, u \rangle$$, where
   - $$F$$ is a [Set](https://en.wikipedia.org/wiki/Set_(mathematics)) consisting of all the elements
     in the Field
@@ -17,9 +17,9 @@ A Field is a 5-tuple, denoted by; $$\langle F, +, \cdot, e, u \rangle$$, where
   - $$e$$ is the Additive identity
   - $$u$$ is the Multiplicative identity,
 
-and the following axioms:
-  1. $$\forall a,b \in F, a + b = b + a$$ (Commutativity)
-  1. $$\forall a,b \in F, (a + b) + c = a + (b + c)$$ (Associativity)
+with the following axioms defined:
+  1. $$\forall a,b \in F, a + b = b + a$$ (commutativity)
+  1. $$\forall a,b \in F, (a + b) + c = a + (b + c)$$ (associativity)
   1. $$\forall a \in F, a + e = a$$ (Additive identity axiom)
   1. $$\forall a \in F, \exists b \ni a + b = e$$ (existence of an Additive inverse)
 
@@ -44,11 +44,11 @@ common algebraic expressions we've seen before.
 
 First of all, we want to verify that if $$a + b = a + c$$, then $$b = c$$.
 
-_Theorem_: $$\forall a, b, c \in F$$, if $$a + b = a + c$$, then $$b = c$$.
+_**Theorem**_: $$\forall a, b, c \in F$$, if $$a + b = a + c$$, then $$b = c$$.
 
-_Proof_: By the existence of Additive inverse axiom, $$\exists d \in F$$ where $$a + d = e$$. Thus,
-$$(a + b) + d = (a + c) + d => (a + d) + b = (a + d) + c$$ (by the commutativity and associativity
-axiom). Hence, $$e + b = e + c => b = c$$ (by the Additive identity axiom). $$\blacksquare$$
+_**Proof**_: By the existence of Additive inverse axiom, $$\exists d \in F$$ where $$a + d = e$$. Thus,
+$$(a + b) + d = (a + c) + d$$ $$=> (a + d) + b = (a + d) + c$$ (by the commutativity and associativity
+axiom). Hence, $$e + b = e + c$$ $$=> b = c$$ (by the Additive identity axiom). $$\blacksquare$$
 
 Next, we would like to verify that both the Additive and Multiplicative identity are unique, i.e,
 there is only one such identity (in the whole Field).
