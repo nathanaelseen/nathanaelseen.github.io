@@ -8,14 +8,13 @@ description: Covers what an algebraic Field is and what it means for a Field to 
 In [Algebra](https://en.wikipedia.org/wiki/Algebra), a Field is a [Set](https://en.wikipedia.org/wiki/Set), by which two important
 operations, namely; **Addition** and **Multiplication**, over the elements (in the Set) are defined.
 
-_**Definition**_:
-A Field is a 5-tuple, denoted by; $$\langle F, +, \cdot, e, u \rangle$$, where
+_**Definition 1**_. A Field is a 5-tuple, denoted by; $$\langle F, +, \cdot, e, u \rangle$$, where
   - $$F$$ is a [Set](https://en.wikipedia.org/wiki/Set_(mathematics)) consisting of all the elements
     in the Field
   - $$+$$ is the Additive operator
   - $$\cdot\$$ is the Multiplicative operator
-  - $$e$$ is the Additive identity
-  - $$u$$ is the Multiplicative identity,
+  - $$e \in F$$ is the Additive identity
+  - $$u \in F$$ is the Multiplicative identity,
 
 with the following axioms defined:
   1. $$\forall a,b \in F, a + b = b + a$$ (commutativity)
@@ -33,35 +32,46 @@ with the following axioms defined:
 Some common examples of fields include; $$\mathbb{N}$$, $$\mathbb{Q}$$, $$\mathbb{R}$$, and $$\mathbb{C}$$, where in
 particular, $$\mathbb{N} \subseteq \mathbb{Q} \subseteq \mathbb{R} \subseteq \mathbb{C}$$.
 
-The Additive and Multiplicative identity $$e$$ and $$u$$, are merely 'special' elements in the Set
-$$F$$, where when you 'add'/'multiply' any element; $$x \in F$$, you will get back the same x.
+In the context of $$\mathbb{R}$$, the Additive identity, $$e = 0$$, and the $$u = 1$$.
 
-Also, we note that in $$\mathbb{R}$$, the Additive identity, $$e$$ is the _symbol_ $$0$$, and the
-Multiplicative identity $$u$$ is the _symbol_ $$1$$.
-
-Just with the simple definition of a Field (as given above), we can jump right to proving some
-common algebraic expressions we've seen before.
+Just with this simple definition of a Field, we can jump right to proving some common algebraic expressions
+we've seen before.
 
 First of all, we want to verify that if $$a + b = a + c$$, then $$b = c$$.
 
-_**Theorem**_: $$\forall a, b, c \in F$$, if $$a + b = a + c$$, then $$b = c$$.
+_**Theorem 1**_. $$\forall a, b, c \in F$$, if $$a + b = a + c$$, then $$b = c$$.
 
-_**Proof**_: By the existence of Additive inverse axiom, $$\exists d \in F$$ where $$a + d = e$$. Thus,
-$$(a + b) + d = (a + c) + d$$ $$=> (a + d) + b = (a + d) + c$$ (by the commutativity and associativity
-axiom). Hence, $$e + b = e + c$$ $$=> b = c$$ (by the Additive identity axiom). $$\blacksquare$$
+_**Proof**_. By _axiom 4_, $$\exists d \in F$$ where $$a + d = e$$. Thus,
+$$(a + b) + d = (a + c) + d$$ $$=> (a + d) + b = (a + d) + c$$ (by _axiom 1 and 2_).
+Hence, $$e + b = e + c$$ $$=> b = c$$ (by _axiom 3_). $$\blacksquare$$
 
-Next, we would like to verify that both the Additive and Multiplicative identity are unique, i.e,
-there is only one such identity (in the whole Field).
+Next, we would like to verify that both the Additive and Multiplicative identity ($$e$$ and
+$$u$$) are unique.
 
-In $$\mathbb{R}$$, this means that $$0$$, the Additive identity is unique, and there is no other
-such number; $$0'$$, which has the same property as $$0$$, where when you add a number $$x$$
-with it, you will get back the same number $$x$$.
+In the context of $$\mathbb{R}$$, this means there is no such other number; $$0'$$, which has
+the same property as $$0$$, where when you add any number $$x$$ with it, you will get back
+the same number $$x$$.
 
-We will only prove the uniqueness of the Additive identity, and the proof of the Multiplicative
+We will only prove the uniqueness of the Additive identity, and the proof for the Multiplicative
 identity should be similar.
 
-_Theorem_:
-$$\exists! e \in F$$, where $$\forall a \in F$$, $$a + e = a$$.
+_**Theorem 2**_. $$\exists! e \in F$$, where $$\forall a \in F$$, $$a + e = a$$.
 
-_Proof_: Suppose that $$\exists e, e' \in F$$, where $$\forall a \in F$$, $$a + e = a$$ and
-$$a + e' = a$$. Then, by previous Theorem, $$e = e'$$.
+_**Proof**_. Suppose that $$\exists e, e' \in F$$, where $$\forall a \in F$$, $$a + e = a$$ and
+$$a + e' = a$$. Then, by previous Theorem, $$e = e'$$. $$\blacksquare$$
+
+Notationally, $$\forall a \in F$$, we denote the Additive and Multiplicative inverses by
+$$-a$$ and $$a^{-1}$$ respectively.
+
+We thus have $$a + (-a) = e$$ and $$a \cdot a^{-1} = u$$.
+
+In $$\mathbb{R}$$, this would be $$a + (-a) = 0$$ and $$a \cdot a^{-1} = 1$$.
+
+As with inverses, we present here a Theorem on the inverse of a Multiplicative inverse.
+
+_**Theorem 3**_. $$\forall a \in F$$, if $$a \ne e$$ then $$(a^{-1})^{-1} = a$$.
+
+Next, we present a Theorem concerning 'division' of elements (or numbers if you will)
+in a Field.
+
+_**Theorem 4**_. $$\forall a, b \in F$$, $$\exists! x \in F \ni a \cdot x = b$$.
