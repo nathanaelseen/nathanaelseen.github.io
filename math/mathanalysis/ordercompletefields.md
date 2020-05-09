@@ -5,6 +5,9 @@ description: Covers what an algebraic Field is and what it means for a Field to 
 
 ## Order Complete Fields
 
+In this section, we take a step back and look at (High School) Algebra, but from a more
+abstract perspective.
+
 In [Algebra](https://en.wikipedia.org/wiki/Algebra), a Field is a [Set](https://en.wikipedia.org/wiki/Set), by which two important
 operations, namely; **Addition** and **Multiplication**, over the elements (in the Set) are defined.
 
@@ -151,3 +154,7 @@ Hence we could simply take any $$x \in F$$ to get our desired $$b = e$$, and
 the uniqueness required in _Theorem 5_ thus breaks down!
 
 Hence, in this case, we actually need the restriction of $$b \ne e$$ to be present.
+
+With all these seemingly familiar algebraic expressions proved, a reader should be
+able to deduce the rest of the common expressions from the abstract definition
+of a Field.
