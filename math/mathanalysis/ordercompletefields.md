@@ -60,15 +60,15 @@ _**Theorem 2**_. $$\exists! e \in F$$, where $$\forall a \in F$$, $$a + e = a$$.
 _**Proof**_. Suppose that $$\exists e, e' \in F$$, where $$\forall a \in F$$, $$a + e = a$$ and
 $$a + e' = a$$. Then, by previous Theorem, $$e = e'$$. $$\blacksquare$$
 
-As with the uniqueness of the identities, we now verify that $$\forall a \in F$$, their Additive
+Similar to the uniqueness of the identities, we now verify that $$\forall a \in F$$, their Additive
 and Multiplicative inverses are also unique.
 
-The proof for this is quite similar to the uniqueness proof previously.
+The proof for this is quite similar to the uniqueness proof above.
 
 _**Theorem 3**_. $$\forall a \in F, \exists! b \in F \ni a + b = e$$
 
-_**Proof**_. Suppose that $$\exists b, b' \in F$$, where $$\forall a \in F$$, $$a + b = e$$ and
-$$a + b' = e$$. Then, by previous Theorem, $$b = b'$$. $$\blacksquare$$
+_**Proof**_. Suppose $$\forall a \in F, \exists b, b' \in F \ni a + b' = e$$.
+Then, by previous Theorem, $$b = b'$$. $$\blacksquare$$
 
 Notationally, $$\forall a \in F$$, we can denote their Additive and Multiplicative inverses by
 $$-a$$ and $$a^{-1}$$ respectively.
@@ -77,7 +77,8 @@ We thus have $$a + (-a) = e$$ and $$a \cdot a^{-1} = u$$.
 
 In $$\mathbb{R}$$, this would be $$a + (-a) = 0$$ and $$a \cdot a^{-1} = 1$$.
 
-As with inverses, we present here a Theorem on the inverse of a Multiplicative inverse.
+As with inverses, we present here a Theorem on the inverse of a Multiplicative inverse;
+$$(a^{-1})^{-1}$$.
 
 _**Theorem 4**_. $$\forall a \in F$$, if $$a \ne e$$ then $$(a^{-1})^{-1} = a$$.
 
@@ -88,7 +89,11 @@ Thus, $$(a^{-1})^{-1} = a$$. $$\blacksquare$$
 Next, we present a Theorem concerning 'division' of elements (or numbers if you will)
 in a Field.
 
-_**Theorem 5**_. $$\forall a, b \in F$$, $$\exists! x \in F \ni a \cdot x = b$$.
+_**Theorem 5**_. $$\forall a, b \in F$$, where $$b \ne e$$, $$\exists! x \in F \ni a \cdot x = b$$.
 
-Now, we turn to the question on why division by $$e$$ (or $$0$$ if you will) is
-always not allowed.
+Notationally, we could also denote the $$x$$ satisfying $$ax = b$$, by $$x = \dfrac{b}{a}$$.
+
+Similarly, we could also denote $$a^{-1}$$, by $$\dfrac{1}{a}$$.
+
+At this juncture, an alert reader might notice that in both Theorems 4 and 5, there are
+restrictions on what you can 'divide' by and what can be 'divided'.
