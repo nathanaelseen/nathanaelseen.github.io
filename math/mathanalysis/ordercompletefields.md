@@ -91,9 +91,63 @@ in a Field.
 
 _**Theorem 5**_. $$\forall a, b \in F$$, where $$b \ne e$$, $$\exists! x \in F \ni a \cdot x = b$$.
 
+_**Proof**_. _(to be updated soon)_
+
 Notationally, we could also denote the $$x$$ satisfying $$ax = b$$, by $$x = \dfrac{b}{a}$$.
 
 Similarly, we could also denote $$a^{-1}$$, by $$\dfrac{1}{a}$$.
 
-At this juncture, an alert reader might notice that in both Theorems 4 and 5, there are
+At this juncture, an alert reader might notice that in both _Theorems 4_ and _5_, there are
 restrictions on what you can 'divide' by and what can be 'divided'.
+
+We shall tackle them one at a time.
+
+Now, for _Theorem 4_, the restriction was on the fact that we couldn't 'divide' anything
+by $$e$$ (or equivalently by $$0$$ in $$\mathbb{R}$$).
+
+But is this restriction really necessary? Did the definition of the Field or any Theorems
+cause this restriction?
+
+Absolutely not, and we could actually thus remove it!
+
+But suppose we removed it, then in the Proof (of _Theorem 4_),
+specifically; $$a \cdot a^{-1} = e$$, if $$a = e$$, would that mean $$e^{-1}$$ (or
+$$0^{-1}$$) actually exists?
+
+(The gnawing question pops up again.)
+
+The answer is yes it does!
+
+But why then, in High School, do we keep trying to restrict the
+expression $$0^{-1}$$ / $$\dfrac{1}{0}$$?
+
+It is because, this expression, although valid does not make sense at all (dividing
+something by _nothing_).
+
+Hence to wrap things up, you could theoretically 'divide' by $$0$$, and hence
+_Theorem 4_ is valid even with the current restriction on $$a \ne e$$ removed.
+
+Now, as for _Theorem 5_, we actually need to keep the restriction there.
+
+For suppose the restriction was removed and $$a \cdot x = b = e$$ $$=> a \cdot x = e$$.
+Then either $$a = e$$ or $$x = e$$. But since we're trying an $$x$$, $$a = e$$.
+
+_**Theorem 6**_. $$\forall a, b \in F$$, if $$a \cdot b = e$$, then either
+$$a = e$$ or $$b = e$$.
+
+_**Proof**_. _(to be updated soon)_
+
+Now, if that's the case, then we run into trouble because anything Multiplied with
+$$e$$, would give us back $$e$$.
+
+(Note: $$e$$ seems to be a very special element that has this property, $$u$$
+doesn't even have such a property)
+
+_**Theorem 7**_. $$\forall a \in F$$, $$a \cdot e = e$$.
+
+_**Proof**_. _(to be updated soon)_
+
+Hence we could simply take any $$x \in F$$ to get our desired $$b = e$$, and
+the uniqueness required in _Theorem 5_ thus breaks down!
+
+Hence, in this case, we actually need the restriction of $$b \ne e$$ to be present.
