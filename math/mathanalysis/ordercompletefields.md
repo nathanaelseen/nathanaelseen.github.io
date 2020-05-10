@@ -19,15 +19,15 @@ _**Definition 1**_. A Field is a 5-tuple, denoted by; $$\langle F, +, \cdot, e, 
   - $$e \in F$$ is the Additive identity
   - $$u \in F$$ is the Multiplicative identity,
 
-with the following axioms defined:
-  1. $$\forall a,b \in F, a + b = b + a$$ (commutativity)
-  1. $$\forall a,b \in F, (a + b) + c = a + (b + c)$$ (associativity)
-  1. $$\forall a \in F, a + e = a$$ (Additive identity axiom)
-  1. $$\forall a \in F, \exists b \in F \ni a + b = e$$ (existence of an Additive inverse)
+with the following Axioms defined:
+  1. <a name="axiom1"></a>$$\forall a,b \in F, a + b = b + a$$ (commutativity)
+  1. <a name="axiom2"></a>$$\forall a,b \in F, (a + b) + c = a + (b + c)$$ (associativity)
+  1. <a name="axiom3"></a>$$\forall a \in F, a + e = a$$ (Additive identity axiom)
+  1. <a name="axiom4"></a>$$\forall a \in F, \exists b \in F \ni a + b = e$$ (existence of an Additive inverse)
 
   1. $$\forall a,b \in F, a \cdot b = b \cdot a$$ (commutativity)
   1. $$\forall a,b \in F, (a \cdot b) \cdot c = a \cdot (b \cdot c)$$ (associativity)
-  1. $$\forall a \in F, a \cdot u = a$$ (Multiplicative identity axiom)
+  1. <a name="axiom7"></a>$$\forall a \in F, a \cdot u = a$$ (Multiplicative identity axiom)
   1. $$\forall a \in F, \exists b \in F \ni a \cdot b = u$$ (existence of an Multiplicative inverse)
 
   1. $$\forall a,b,c \in F, a \cdot (b + c) = a \cdot b + a \cdot c$$ (distributivity)
@@ -44,9 +44,10 @@ First of all, we want to verify that if $$a + b = a + c$$, then $$b = c$$.
 
 _**Theorem 1**_. $$\forall a, b, c \in F$$, if $$a + b = a + c$$, then $$b = c$$.
 
-_**Proof**_. By _axiom 4_, $$\exists d \in F$$ where $$a + d = e$$. Thus,
-$$(a + b) + d = (a + c) + d$$ $$=> (a + d) + b = (a + d) + c$$ (by _axiom 1 and 2_).
-Hence, $$e + b = e + c$$ $$=> b = c$$ (by _axiom 3_). $$\blacksquare$$
+_**Proof**_. By _[Axiom 4](#axiom4)_, $$\forall a \in F$$, $$\exists d \in F \ni a + d = e$$.
+Thus, $$(a + b) + d = (a + c) + d$$ $$=> (a + d) + b = (a + d) + c$$ (by _[Axiom 1](#axiom1)_ and
+_[2](#axiom2)_).
+Hence, $$e + b = e + c$$ $$=> b = c$$ (by _[Axiom 3](#axiom3)_). $$\blacksquare$$
 
 Next, we would like to verify that both the Additive and Multiplicative identity ($$e$$ and
 $$u$$) are unique.
@@ -68,9 +69,9 @@ and Multiplicative inverses are also unique.
 
 The proof for this is quite similar to the uniqueness proof above.
 
-_**Theorem 3**_. $$\forall a \in F, \exists! b \in F \ni a + b = e$$
+_**Theorem 3**_. <a name="theorem3"></a>$$\forall a \in F$$, $$\exists! b \in F \ni a + b = e$$
 
-_**Proof**_. Suppose $$\forall a \in F, \exists b, b' \in F \ni a + b' = e$$.
+_**Proof**_. Suppose $$\forall a \in F$$, $$\exists b, b' \in F \ni a + b' = e$$.
 Then, by previous Theorem, $$b = b'$$. $$\blacksquare$$
 
 Notationally, $$\forall a \in F$$, we can denote their Additive and Multiplicative inverses by
@@ -83,29 +84,32 @@ In $$\mathbb{R}$$, this would be $$a + (-a) = 0$$ and $$a \cdot a^{-1} = 1$$.
 As with inverses, we present here a Theorem on the inverse of a Multiplicative inverse;
 $$(a^{-1})^{-1}$$.
 
-_**Theorem 4**_. $$\forall a \in F$$, if $$a \ne e$$ then $$(a^{-1})^{-1} = a$$.
+_**Theorem 4**_. <a name="theorem4"></a>$$\forall a \in F$$, if $$a \ne e$$ then $$(a^{-1})^{-1} = a$$.
 
-_**Proof**_. We note that $$\forall a \in F, a^{-1} \cdot (a^{-1})^{-1} = e$$ and
+_**Proof**_. We note that $$\forall a \in F$$, $$a^{-1} \cdot (a^{-1})^{-1} = e$$ and
 $$a \cdot a^{-1} = e$$. Hence, $$a^{-1} \cdot (a^{-1})^{-1} = e$$ and $$a^{-1} \cdot a = e$$.
 Thus, $$(a^{-1})^{-1} = a$$. $$\blacksquare$$
 
 Next, we present a Theorem concerning 'division' of elements (or numbers if you will)
 in a Field.
 
-_**Theorem 5**_. $$\forall a, b \in F$$, where $$b \ne e$$, $$\exists! x \in F \ni a \cdot x = b$$.
+_**Theorem 5**_. <a name="theorem5"></a>$$\forall a, b \in F$$, where $$b \ne e$$,
+$$\exists! x \in F \ni a \cdot x = b$$.
 
-_**Proof**_. _(to be updated soon)_
+_**Proof**_. By [Theorem 3](#theorem3), $$\forall a \in F$$, $$\exists! y \in F \ni a \cdot y = u$$.
+Hence, let $$x = y \cdot b$$. Thus, $$a \cdot x = a \cdot (y \cdot b)$$ $$ = (a \cdot y) \cdot b = u \cdot b$$
+$$ = b$$ (by _[Axiom 2](#axiom2)_ and _[7](#axiom7)_). $$\blacksquare$$
 
-Notationally, we could also denote the $$x$$ satisfying $$ax = b$$, by $$x = \dfrac{b}{a}$$.
+Notationally, we could also denote the $$x$$ satisfying $$a \cdot x = b$$, by $$x = \dfrac{b}{a}$$.
 
 Similarly, we could also denote $$a^{-1}$$, by $$\dfrac{1}{a}$$.
 
-At this juncture, an alert reader might notice that in both _Theorems 4_ and _5_, there are
+At this juncture, an alert reader might notice that in both _[Theorem 4](#theorem4)_ and _[5](#theorem5)_, there are
 restrictions on what you can 'divide' by and what can be 'divided'.
 
 We shall tackle them one at a time.
 
-Now, for _Theorem 4_, the restriction was on the fact that we couldn't 'divide' anything
+Now, for _[Theorem 4](#theorem4)_, the restriction was on the fact that we couldn't 'divide' anything
 by $$e$$ (or equivalently by $$0$$ in $$\mathbb{R}$$).
 
 But is this restriction really necessary? Did the definition of the Field or any Theorems
@@ -113,7 +117,7 @@ cause this restriction?
 
 Absolutely not, and we could actually thus remove it!
 
-But suppose we removed it, then in the Proof (of _Theorem 4_),
+But suppose we removed it, then in the Proof (of _[Theorem 4](#theorem4)_),
 specifically; $$a \cdot a^{-1} = e$$, if $$a = e$$, would that mean $$e^{-1}$$ (or
 $$0^{-1}$$) actually exists?
 
@@ -130,7 +134,7 @@ something by _nothing_).
 Hence to wrap things up, you could theoretically 'divide' by $$0$$, and hence
 _Theorem 4_ is valid even with the current restriction on $$a \ne e$$ removed.
 
-Now, as for _Theorem 5_, we actually need to keep the restriction there.
+Now, as for _[Theorem 5](#theorem5)_, we actually need to keep the restriction there.
 
 For suppose the restriction was removed and $$a \cdot x = b = e$$ $$=> a \cdot x = e$$.
 Then either $$a = e$$ or $$x = e$$. But since we're trying an $$x$$, $$a = e$$.
@@ -157,4 +161,4 @@ Hence, in this case, we actually need the restriction of $$b \ne e$$ to be prese
 
 With all these seemingly familiar algebraic expressions proved, a reader should be
 able to deduce the rest of the common expressions from the abstract definition
-f a Field.
+of a Field.
