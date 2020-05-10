@@ -157,4 +157,4 @@ Hence, in this case, we actually need the restriction of $$b \ne e$$ to be prese
 
 With all these seemingly familiar algebraic expressions proved, a reader should be
 able to deduce the rest of the common expressions from the abstract definition
-of a Field.
+f a Field.
