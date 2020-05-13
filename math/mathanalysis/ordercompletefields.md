@@ -25,8 +25,8 @@ with the following Axioms defined:
   1. <a name="axiom3"></a>$$\forall a \in F, a + e = a$$ (Additive identity axiom)
   1. <a name="axiom4"></a>$$\forall a \in F, \exists b \in F \ni a + b = e$$ (existence of an Additive inverse)
 
-  1. $$\forall a,b \in F, a \cdot b = b \cdot a$$ (commutativity)
-  1. $$\forall a,b \in F, (a \cdot b) \cdot c = a \cdot (b \cdot c)$$ (associativity)
+  1. <a name="axiom5"></a>$$\forall a,b \in F, a \cdot b = b \cdot a$$ (commutativity)
+  1. <a name="axiom6"></a>$$\forall a,b \in F, (a \cdot b) \cdot c = a \cdot (b \cdot c)$$ (associativity)
   1. <a name="axiom7"></a>$$\forall a \in F, a \cdot u = a$$ (Multiplicative identity axiom)
   1. $$\forall a \in F, \exists b \in F \ni a \cdot b = u$$ (existence of an Multiplicative inverse)
 
@@ -46,7 +46,7 @@ _**Theorem 1**_. $$\forall a, b, c \in F$$, if $$a + b = a + c$$, then $$b = c$$
 
 _**Proof**_. By _[Axiom 4](#axiom4)_, $$\forall a \in F$$, $$\exists d \in F \ni a + d = e$$.
 Thus, $$(a + b) + d = (a + c) + d$$ $$=> (a + d) + b = (a + d) + c$$ (by _[Axiom 1](#axiom1)_ and
-_[2](#axiom2)_).
+_[Axiom 2](#axiom2)_).
 Hence, $$e + b = e + c$$ $$=> b = c$$ (by _[Axiom 3](#axiom3)_). $$\blacksquare$$
 
 Next, we would like to verify that both the Additive and Multiplicative identity ($$e$$ and
@@ -98,13 +98,13 @@ $$\exists! x \in F \ni a \cdot x = b$$.
 
 _**Proof**_. By [Theorem 3](#theorem3), $$\forall a \in F$$, $$\exists! y \in F \ni a \cdot y = u$$.
 Hence, let $$x = y \cdot b$$. Thus, $$a \cdot x = a \cdot (y \cdot b)$$ $$ = (a \cdot y) \cdot b = u \cdot b$$
-$$ = b$$ (by _[Axiom 2](#axiom2)_ and _[7](#axiom7)_). $$\blacksquare$$
+$$ = b$$ (by _[Axiom 2](#axiom2)_ and _[Axiom 7](#axiom7)_). $$\blacksquare$$
 
 Notationally, we could also denote the $$x$$ satisfying $$a \cdot x = b$$, by $$x = \dfrac{b}{a}$$.
 
 Similarly, we could also denote $$a^{-1}$$, by $$\dfrac{1}{a}$$.
 
-At this juncture, an alert reader might notice that in both _[Theorem 4](#theorem4)_ and _[5](#theorem5)_, there are
+At this juncture, an alert reader might notice that in both _[Theorem 4](#theorem4)_ and _[Theorem 5](#theorem5)_, there are
 restrictions on what you can 'divide' by and what can be 'divided'.
 
 We shall tackle them one at a time.
@@ -137,25 +137,31 @@ _Theorem 4_ is valid even with the current restriction on $$a \ne e$$ removed.
 Now, as for _[Theorem 5](#theorem5)_, we actually need to keep the restriction there.
 
 For suppose the restriction was removed and $$a \cdot x = b = e$$ $$=> a \cdot x = e$$.
-Then either $$a = e$$ or $$x = e$$. But since we're trying an $$x$$, $$a = e$$.
+Then either $$a = e$$ or $$x = e$$. But since we're finding an $$x$$, then $$a = e$$.
+
+However, before we prove the Theorem, we first need to prove the following Lemma.
+
+_**Lemma 1**_. <a name="lemma1"></a>$$\forall a \in F$$, $$a \cdot e = e$$.
+
+_**Proof**_. _(to be updated soon)_
 
 _**Theorem 6**_. $$\forall a, b \in F$$, if $$a \cdot b = e$$, then either
 $$a = e$$ or $$b = e$$.
 
-_**Proof**_. _(to be updated soon)_
+_**Proof**_. Assume WLOG (Without Loss of Generality) that $$\forall a, b \in F$$, $$a \ne e$$.
+(WTS (Want to Show): $$b = e$$.) Then, $$b = b \cdot u$$ $$= b \cdot (a \cdot a^{-1}) = (b \cdot a) \cdot a ^{-1}$$
+$$ = (a \cdot b) \cdot a ^{-1} = e \cdot a$$ $$ = e$$ (by _[Axiom 7](#axiom7)_, _[Theorem
+3](#theorem3)_, _[Axiom 5](#axiom5)_, _[Axiom 6](#axiom6)_, and _[Lemma 1](#lemma1)_). $$\blacksquare$$
 
-Now, if that's the case, then we run into trouble because anything Multiplied with
+Now, if that's the case, then by _[Lemma 1](#lemma1)_ again, we run into trouble because anything Multiplied with
 $$e$$, would give us back $$e$$.
 
 (Note: $$e$$ seems to be a very special element that has this property, $$u$$
 doesn't even have such a property)
 
-_**Theorem 7**_. $$\forall a \in F$$, $$a \cdot e = e$$.
-
-_**Proof**_. _(to be updated soon)_
 
 Hence we could simply take any $$x \in F$$ to get our desired $$b = e$$, and
-the uniqueness required in _Theorem 5_ thus breaks down!
+the uniqueness as required in _[Theorem 5](#theorem5)_ thus breaks down!
 
 Hence, in this case, we actually need the restriction of $$b \ne e$$ to be present.
 
