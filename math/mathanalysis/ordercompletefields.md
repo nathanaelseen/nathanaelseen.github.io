@@ -30,7 +30,7 @@ with the following Axioms defined:
   1. <a name="axiom7"></a>$$\forall a \in F, a \cdot u = a$$ (Multiplicative identity axiom)
   1. $$\forall a \in F, \exists b \in F \ni a \cdot b = u$$ (existence of an Multiplicative inverse)
 
-  1. $$\forall a,b,c \in F, a \cdot (b + c) = a \cdot b + a \cdot c$$ (distributivity)
+  1. <a name="axiom9"></a>$$\forall a,b,c \in F, a \cdot (b + c) = a \cdot b + a \cdot c$$ (distributivity)
 
 Some common examples of fields include; $$\mathbb{N}$$, $$\mathbb{Q}$$, $$\mathbb{R}$$, and $$\mathbb{C}$$, where in
 particular, $$\mathbb{N} \subseteq \mathbb{Q} \subseteq \mathbb{R} \subseteq \mathbb{C}$$.
@@ -45,9 +45,8 @@ First of all, we want to verify that if $$a + b = a + c$$, then $$b = c$$.
 _**Theorem 1**_. $$\forall a, b, c \in F$$, if $$a + b = a + c$$, then $$b = c$$.
 
 _**Proof**_. By _[Axiom 4](#axiom4)_, $$\forall a \in F$$, $$\exists d \in F \ni a + d = e$$.
-Thus, $$(a + b) + d = (a + c) + d$$ $$=> (a + d) + b = (a + d) + c$$ (by _[Axiom 1](#axiom1)_ and
-_[Axiom 2](#axiom2)_).
-Hence, $$e + b = e + c$$ $$=> b = c$$ (by _[Axiom 3](#axiom3)_). $$\blacksquare$$
+Thus, $$(a + b) + d = (a + c) + d$$ $$ => (a + d) + b = (a + d) + c$$ (by _[Axiom 1](#axiom1)_ and
+_[Axiom 2](#axiom2)_). Hence, $$e + b = e + c$$ $$ => b = c$$ (by _[Axiom 3](#axiom3)_). $$\blacksquare$$
 
 Next, we would like to verify that both the Additive and Multiplicative identity ($$e$$ and
 $$u$$) are unique.
@@ -143,7 +142,9 @@ However, before we prove the Theorem, we first need to prove the following Lemma
 
 _**Lemma 1**_. <a name="lemma1"></a>$$\forall a \in F$$, $$a \cdot e = e$$.
 
-_**Proof**_. _(to be updated soon)_
+_**Proof**_. $$\forall a \in F$$, $$a \cdot e = a \cdot (e + e)$$ $$ = a \cdot e + a \cdot e$$
+ (by _[Axiom 3](#axiom3)_ and _[Axiom 9](#axiom9)_). Then, $$a \cdot e + e = a \cdot e + a \cdot e$$
+$$ => e = a \cdot e$$ (by _[Axiom 3](#axiom3)_). $$\blacksquare$$
 
 _**Theorem 6**_. $$\forall a, b \in F$$, if $$a \cdot b = e$$, then either
 $$a = e$$ or $$b = e$$.
