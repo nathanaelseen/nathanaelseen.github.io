@@ -4,11 +4,6 @@
     {% include head.html %}
 
     <body>
-        <form action="/search.html" method="get">
-            <label for="search-box">Search</label>
-            <input type="text" id="search-box" name="query">
-            <input type="submit" value="search">
-        </form>
 
         <div class="container content">
             <header class="masthead">
@@ -16,6 +11,12 @@
                 <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>
                 <small>{{ site.tagline }}</small>
                 </h3>
+                <br/>
+                <form action="/search.html" method="get">
+                    <label for="search-box">Search:</label>
+                    <input type="text" id="search-box" name="query" placeholder="What would you like to know...">
+                    <input type="submit" value="Go">
+                </form>
             </header>
 
             <main>
