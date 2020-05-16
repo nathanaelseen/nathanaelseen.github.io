@@ -1,4 +1,7 @@
-## Home
+---
+layout: page
+title: Home
+---
 
 Hi, thank you for visiting my personal website.
 

@@ -1,12 +1,13 @@
 ---
+layout: page
 title: Order Complete Fields
 description: Covers what an algebraic Field is and what it means for a Field to be order complete
 ---
 
-## Order Complete Fields
-
 In this section, we take a step back and look at (High School) Algebra, but from a more
 abstract perspective.
+
+---
 
 In [Algebra](https://en.wikipedia.org/wiki/Algebra), a Field is a [Set](https://en.wikipedia.org/wiki/Set), by which two important
 operations, namely; **Addition** and **Multiplication**, over the elements (in the Set) are defined.
@@ -15,7 +16,7 @@ _**Definition 1**_. A Field is a 5-tuple, denoted by; $$\langle F, +, \cdot, e, 
   - $$F$$ is a [Set](https://en.wikipedia.org/wiki/Set_(mathematics)) consisting of all the elements
     in the Field
   - $$+$$ is the Additive operator
-  - $$\cdot\$$ is the Multiplicative operator
+  - $$\cdot$$ is the Multiplicative operator
   - $$e \in F$$ is the Additive identity
   - $$u \in F$$ is the Multiplicative identity,
 
