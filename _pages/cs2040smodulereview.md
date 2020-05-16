@@ -1,0 +1,61 @@
+---
+layout: page
+title: CS2040S Module Review
+description: CS2040S Module Review
+---
+
+In this section, I'm writing my personal take on CS2040S and how I felt about it and, probably some
+advice for the juniors who have yet to take this mod too!
+
+I've also left the same [module review](https://nusmods.com/modules/CS2040S/data-structures-and-algorithms)
+on NUSMods.
+
+---
+
+_Taken in AY19/20 Sem 1_
+
+_Lecturer: Asst Prof. Harold Soh_
+
+**Description:**
+
+This module is on Data Structures and Algorithms, and broadly, there are 2 aspects.
+
+Firstly, it introduces the various types of Data Structures, including; Array, Linked List, Binary Heap, BST (Binary Search Tree), Hash Table, and Graph, as well as the various ADTs (Abstract Data Types), such as; List, Stack, Queue, Priority Queue, Ordered Dictionary, Unordered Dictionary/Symbol Table, and Graph. We got to learn about each data structure/ADT and their unique properties, and also the internal algorithms which directly manipulate these data structures to perform operations like; CRUD (Create, Retrieve, Update, and Delete), Search, Predecessor, Successor, etc.
+
+The second aspect of CS2040S is on algorithmic problem-solving, usually through leveraging on those taught data structures (and their unique properties)/ augmenting and modifying them to formulate a solution/algorithm to the problem which theoretically executes within the most efficient and reasonable bounds of computational time and space. This module uses the Java programming language, which follows the imperative OOP (Object-Oriented Paradigm) style, to illustrate the implementation of these data structures/ADTs, hence it is advisable to take CS2030 beforehand or concurrently, or perhaps maybe just read up abit of basic Java, to be more familiar with the language itself.
+
+**Relationship to CS1101S:**
+
+I kinda regretted taking this module a sem after taking CS1101S, as I vaguely remembered stuffs I learnt from the basic course!
+
+But anyways, CS2040S does cover abit of algorithm analysis using Big-O (seen in CS1101S), and sometimes requires students to derive/proof (informally), those bounds pertaining to the computational time/space complexity of an algorithm. Also, do expect to occasionally encounter some more advanced proofs which uses abit more math like summation/series manipulation, and probability theory (e.g, analysis of the Randomised QuickSort Algorithm, and also the performance of HashTable under the SUHA (Simple Uniform Hashing Assumption)).
+
+Additionally, recursion is revisited through various divide and conquer algorithms like MergeSort, QuickSort, and BST traversal. As such, most of them should be quite familiar as from CS1101S, but with just some slight difference, as the OOP Java programming language is used to illustrate/implement data abstraction instead (of the declarative version of the Source language) (Hence some of the recursive algorithms here, are done in an OOP fashion instead).
+
+Also, alike CS1101S, this module emphasises on algorithmic efficiency in terms of computational time and space, hence an O(n^2) or higher solutions are usually discouraged, unless there are no other methods to solve those problems. It's always about how can we do better at solving a problem in the fastest possible time and least space, i.e, using the least computational resources.
+
+**Relationship to CS1231:**
+
+I think the most overlap with 1231 is on the part with graphs! Graphs as discrete mathematical objects were introduced to us again, but this time with more focus on implementation details, on how to represent them in physical computer memory (i.e, either Adjacency List or Adjacency Matrix), and also focused quite a lot on the famous SSSP (Single-Source Shortest Path) computer science problem. Additionally, there was a topic on MST (Minimum Spanning Trees) as well, with coverage on Prim’s and Kruskal’s algorithm, and their implementations.
+
+**Some study tips (my two cents worth):**
+
+In the true spirit of this module which emphasises on algorithmic efficiency (time and space), the questions for the problem sets were all virtually taken from past competitive programming contests! Hence, I highly recommend understanding the course material thoroughly, before taking a stab at the problem sets.
+
+I think this module is more on understanding of concepts, and the application of those concepts. Hence, I guess there’s nothing much to memorise.
+
+As for the understanding of the concepts, do spend some time thinking about the data structures/algorithms, what do they actually mean, as well as their implications. Kudos to Prof Harold who tried to make each lecture as engaging, with legendary characters like Herbert, and Naruto! I felt the lecturers helpful as Prof Harold presented the concepts in a digestible and relatable manner, and at a reasonable pace. I also like the problem-solving approach Prof adopted to his lectures, which required us to think abit of those data structures/algorithms and their derivations instead of taking them as-is. Personally, I also did abit of those Visualgo quizzes (you can specifically choose which chapters you’re weaker at to practise), in order to recapitulate those concepts.
+
+For the application of concepts, which is usually algorithmic problem solving (with those data structures/ADTs), I recommend doing more Kattis questions! Maybe those from CS2040 and CS2040C would be good, as I personally did those additional problems and it really helped me to gain a deeper understanding and appreciation of the concepts and how the data structures/algorithms could be applied in various (interesting and different) contexts. Also, the tutorials and labs are a great avenue at seeing how those data structures/algorithms are applied, though I felt all of them can get quite mathy and a little too fast-paced, and I could barely keep up, and understood only at most of the half questions each session T.T. On a brighter note, for the labs and tutorials there’s no preparation needed, just on-the-spot problem-solving in class, and also the content covered in the labs are usually more advanced and won’t really be tested in exams.
+
+Finally, as Mario has mentioned, the S-variant of this mod covers essentially the same topics as CS2040, but at a slightly accelerated pace, leaving us some time (roughly 2 weeks additional) for the more advanced but non-examinable topics. However, I felt the pace quite manageable and I think constant revision helps, don’t lapse too far behind as the topics are somewhat interrelated to each other.
+
+All the best and hope this helps!
+
+Effort: 7/10
+
+Difficulty: 7/10
+
+Expected Grade: B+
+
+Actual Grade: A-
