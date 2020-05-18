@@ -12,11 +12,13 @@
                 <small>{{ site.tagline }}</small>
                 </h3>
                 <br/>
-                <form action="/search.html" method="get">
+                <form action="/search.html" method="get" autocomplete="off">
                     <table style="border:none;">
                         <tr>
                             <td style="border:none">
-                                <input type="text" id="search-box" name="query" placeholder="What will you like to know?">
+                                <div class="autocomplete">
+                                    <input type="text" id="search-box" name="query" placeholder="It all begins with a Query">
+                                </div>
                             </td>
                             <td style="border:none">
                                 <input type="submit" value="Go">
@@ -24,6 +26,7 @@
                         </tr>
                     </table>
                 </form>
+                <div id="searchResults"></div>
             </header>
 
             <main>
@@ -44,6 +47,9 @@
                 </small>
             </footer>
         </div>
+        <script>
+            autocompleteSearchSuggestions();
+        </script>
 
         {% include mathjax.html %}
     </body>
