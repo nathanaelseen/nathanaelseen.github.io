@@ -64,6 +64,7 @@ function getSearchResults(searchTerm) {
 // Search the site and display search suggestions
 function getSearchSuggestions(searchTerm) {
     if (searchTerm) {
+        searchTerm = searchTerm.toLowerCase(); // convert to lower case, only for suggestions
         document.getElementById('search-box').setAttribute("value", searchTerm);
 
         // Initalize lunr with the fields it will be searching on. I've given title
