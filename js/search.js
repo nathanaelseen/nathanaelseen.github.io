@@ -70,7 +70,7 @@ function getSearchSuggestions(searchTerm) {
         // Initalize lunr with the fields it will be searching on. I've given title
         // a boost of 10 to indicate matches on this field are more important.
         var idx = lunr(function () {
-            this.field('id');
+            // this.field('id');
             this.field('title', { boost: 10 });
             this.field('author');
             this.field('category');
@@ -79,13 +79,17 @@ function getSearchSuggestions(searchTerm) {
 
         for (var key in window.store) { // Add the data to lunr
             idx.add({
-                'id': key,
+                // 'id': key,
                 'title': window.store[key].title,
                 'author': window.store[key].author,
                 'category': window.store[key].category,
                 'content': window.store[key].content
             });
+            // console.log(key);
 
+            // console.log(window.store[key].content);
+
+            // console.log(window.store[key].title);
         }
 
         var results = idx.tokenStore.expand(searchTerm); // Get lunr to perform a search
@@ -150,6 +154,11 @@ function autocompleteSearchSuggestions() {
             b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
             /*execute a function when someone clicks on the item value (DIV element):*/
             b.addEventListener("click", function(e) {
+                inp.value = this.getElementsByTagName("input")[0].value;
+                document.getElementById("searchForm").submit();
+
+                // return;
+
                 /*insert the value for the autocomplete text field:*/
                 inp.value = this.getElementsByTagName("input")[0].value;
                 /*close the list of autocompleted values,
