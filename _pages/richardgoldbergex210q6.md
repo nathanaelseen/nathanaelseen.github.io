@@ -30,7 +30,7 @@ $$(m,n \geqslant N)$$.
 
 But, we note that, $$\mid s_m - s_n \mid = \mid (a_1 + ... + a_m) - (a_1 + ... + a_n) \mid$$
 $$ = \mid a_n + a_{n + 1} +  ... + a_m \mid$$
-$$ \leqslant \mid a_n \mid + .. + \mid a_{n + 1} \mid + \mid a_m \mid$$
+$$ \leqslant \mid a_n \mid + \mid a_{n + 1} \mid + ... + \mid a_m \mid$$
 $$ = t_m - t_n = \mid t_m - t_n \mid$$ $$< \epsilon$$ $$(m, n \geqslant N)$$.
 
 Thus, $$(s_n)_{n=1}^{\infty}$$ is Cauchy. $$\blacksquare$$
