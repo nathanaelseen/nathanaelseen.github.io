@@ -142,7 +142,6 @@ function autocompleteSearchSuggestions() {
         if (arr.length == 0 && val.length != 0) {
             // If no results from search suggestions
             inp.style.borderColor = "red";
-            alert("s");
         } else {
             // Otherwise, revert back to original border highlight color
             inp.style.borderColor = "#4d90fe";
