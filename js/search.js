@@ -142,6 +142,7 @@ function autocompleteSearchSuggestions() {
         if (arr.length == 0 && val.length != 0) {
             // If no results from search suggestions
             inp.style.borderColor = "red";
+            alert("s");
         } else {
             // Otherwise, revert back to original border highlight color
             inp.style.borderColor = "#4d90fe";
@@ -168,14 +169,7 @@ function autocompleteSearchSuggestions() {
 
     /*execute a function presses a key on the keyboard:*/
     inp.addEventListener("keydown", function(e) {
-        /*
-         * Over here, we just catch for a very specific scenerio: Assume
-         * that the (search-box) current border highlight color is red,
-         * and so far only 1 character has been entered and now the user
-         * presses a (keydown) backspace, then the code below will attempt
-         * to revert the (search-box) border highlight color to its original
-         * blue.
-         */
+        // Over here, we just catch for a very specific scenerio
         if (this.value.length == 1 && (e.keyCode == 8 || e.keyCode == 46)) {
             inp.style.borderColor = "#4d90fe";
         }
