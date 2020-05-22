@@ -139,6 +139,14 @@ function autocompleteSearchSuggestions() {
         // call to retrieve all search suggestions
         var arr = getSearchSuggestions(val);
 
+        if (arr.length == 0 && val.length != 0) {
+            // If no results from search suggestions
+            inp.style.borderColor = "red";
+        } else {
+            // Otherwise, revert back to original border highlight color
+            inp.style.borderColor = "#4d90fe";
+        }
+
         /*for each item in the array...*/
         for (i = 0; i < arr.length; i++) {
             /*create a DIV element for each matching element:*/
@@ -153,12 +161,25 @@ function autocompleteSearchSuggestions() {
                 var url = this.getElementsByTagName("input")[0].value;
                 window.location.href = url;
             });
+
             a.appendChild(b);
         }
     });
 
     /*execute a function presses a key on the keyboard:*/
     inp.addEventListener("keydown", function(e) {
+        /*
+         * Over here, we just catch for a very specific scenerio: Assume
+         * that the (search-box) current border highlight color is red,
+         * and so far only 1 character has been entered and now the user
+         * presses a (keydown) backspace, then the code below will attempt
+         * to revert the (search-box) border highlight color to its original
+         * blue.
+         */
+        if (this.value.length == 1 && (e.keyCode == 8 || e.keyCode == 46)) {
+            inp.style.borderColor = "#4d90fe";
+        }
+
         var x = document.getElementById(this.id + "autocomplete-list");
         if (x) x = x.getElementsByTagName("div");
 
@@ -174,15 +195,9 @@ function autocompleteSearchSuggestions() {
             currentFocus--;
             /*and and make the current item more visible:*/
             addActive(x);
-        } else if (e.keyCode == 13) {
-            /*If the ENTER key is pressed, prevent the form from being submitted,*/
-            e.preventDefault();
-            if (currentFocus > -1) {
-                /*and simulate a click on the "active" item:*/
-                if (x) x[currentFocus].click();
-            }
         }
     });
+
     function addActive(x) {
         /*a function to classify an item as "active":*/
         if (!x) return false;

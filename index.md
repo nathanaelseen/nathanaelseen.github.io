@@ -12,3 +12,6 @@ them.
 
 Just treat this website, as your one-stop _Google_ for **Computer Science**, **Mathematics**, and other
 **Tech** stuffs.
+
+There is a wealth of information on this site, what you manage to find depends on how
+and what you search! :P
