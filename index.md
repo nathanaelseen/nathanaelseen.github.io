@@ -10,5 +10,5 @@ I'm Nathanael Seen, and I'm currently studying Computer Science (Mathematics min
 I've learnt quite a lot of interesting stuffs over at the University, and I thought it would be good to share some of
 them.
 
-Just treat this website, as your one-stop Google for **Computer Science**, **Mathematics**, and other
+Just treat this website, as your one-stop _Google_ for **Computer Science**, **Mathematics**, and other
 **Tech** stuffs.

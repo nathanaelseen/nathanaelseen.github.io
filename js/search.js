@@ -70,7 +70,7 @@ function getSearchSuggestions(searchTerm) {
         // Initalize lunr with the fields it will be searching on. I've given title
         // a boost of 10 to indicate matches on this field are more important.
         var idx = lunr(function () {
-            // this.field('id');
+            this.field('id');
             this.field('title', { boost: 10 });
             this.field('author');
             this.field('category');
@@ -79,22 +79,15 @@ function getSearchSuggestions(searchTerm) {
 
         for (var key in window.store) { // Add the data to lunr
             idx.add({
-                // 'id': key,
+                'id': key,
                 'title': window.store[key].title,
                 'author': window.store[key].author,
                 'category': window.store[key].category,
                 'content': window.store[key].content
             });
-            // console.log(key);
-
-            // console.log(window.store[key].content);
-
-            // console.log(window.store[key].title);
         }
 
-        var results = idx.tokenStore.expand(searchTerm); // Get lunr to perform a search
-
-        return results;
+        var results = idx.search(searchTerm); // Get lunr to perform a search
 
         var parsedResults = [];
 
@@ -105,7 +98,10 @@ function getSearchSuggestions(searchTerm) {
                 var item = store[results[i].ref];
 
                 if (item.title) {
-                    parsedResults.push(item.title);
+                    parsedResults.push({
+                        'title': item.title,
+                        'url': item.url
+                    });
                 }
             }
         }
@@ -148,22 +144,14 @@ function autocompleteSearchSuggestions() {
             /*create a DIV element for each matching element:*/
             b = document.createElement("DIV");
             /*make the matching letters bold:*/
-            b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
-            b.innerHTML += arr[i].substr(val.length);
-            /*insert a input field that will hold the current array item's value:*/
-            b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
+            // b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
+            b.innerHTML += arr[i].title;
+            /*insert a input field that will hold the current array item's url:*/
+            b.innerHTML += "<input type='hidden' value='" + arr[i].url + "'>";
             /*execute a function when someone clicks on the item value (DIV element):*/
             b.addEventListener("click", function(e) {
-                inp.value = this.getElementsByTagName("input")[0].value;
-                document.getElementById("searchForm").submit();
-
-                // return;
-
-                /*insert the value for the autocomplete text field:*/
-                inp.value = this.getElementsByTagName("input")[0].value;
-                /*close the list of autocompleted values,
-                (or any other open lists of autocompleted values:*/
-                closeAllLists();
+                var url = this.getElementsByTagName("input")[0].value;
+                window.location.href = url;
             });
             a.appendChild(b);
         }
