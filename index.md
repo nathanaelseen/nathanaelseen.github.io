@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Home
+description: Your one-stop Wiki for Computer Sciene, Mathematics, and Tech Stuffs
 ---
 
 Hi, thank you for visiting my personal website.
@@ -14,4 +15,4 @@ Just treat this website, as your one-stop _Google_ for **Computer Science**, **M
 **Tech** stuffs.
 
 There is a wealth of information on this site, what you manage to find depends on how
-and what you search! :P
+and what you **Search**!
