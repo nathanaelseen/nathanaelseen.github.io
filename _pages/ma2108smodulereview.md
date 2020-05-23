@@ -141,7 +141,8 @@ per week, on this module.
 But nevertheless, as I’ve mentioned, I really liked Math, and hence still went ahead to
 take it nonetheless.
 
-All in all, there were so many interesting Analysis stuffs covered in this module that I didn’t regret taking it.
+All in all, there were so many interesting Analysis stuffs covered in this module that I
+didn’t regret taking it at all.
 
 In fact, although I struggled quite a lot, this module was one of my favourite module.
 
