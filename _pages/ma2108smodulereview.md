@@ -135,14 +135,15 @@ Finally, as a last word of advise, I would just like to say that if you’re lik
 with Math, and are quite concerned with grades, you might want to reconsider taking this
 extremely tough Math module.
 
-This is also because you need to be prepared to spend quite abit of time per a week on this module,
-especially if you’re not that great with Math too.
+This is also because you need to be prepared to spend quite a significant amount of time,
+per week, on this module.
 
-But nevertheless, as I’ve mentioned, I really liked Math and hence still decided to take it nonetheless.
+But nevertheless, as I’ve mentioned, I really liked Math, and hence still went ahead to
+take it nonetheless.
 
 All in all, there were so many interesting Analysis stuffs covered in this module that I didn’t regret taking it.
 
-In fact, although I struggled quite a lot frankly, this module was one of my favourite module.
+In fact, although I struggled quite a lot, this module was one of my favourite module.
 
 The final choice is still yours!
 
