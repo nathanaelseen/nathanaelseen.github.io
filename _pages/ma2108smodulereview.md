@@ -31,14 +31,14 @@ Metric), to study topics handy in Analysis like Sequences and Series.
 In the subsequent weeks till end of the semester, we dived head-on to study Metric spaces
 rigorously.
 
-We started with Continuity and it’s various reformulations. Thereafter we
-mainly covered the 3C’s; Connectedness, Completeness, and Compactness. Along the way, some
-topics bouldering on topology were also introduced, such as; Connectedness, Open/Closed Sets.
+For Metric Spaces, we started with Continuity and it’s various reformulations. Thereafter we
+mainly covered the 3C’s; Connectedness, Completeness, and Compactness.
 
-Additionally, towards the end, there were other topics such as Sequences of Functions, Series
-of Functions, and the C(M1, M2) Metric Space.
+Along the way, some topics bouldering on Topology such as; Connectedness, Open/Closed Sets,
+were also introduced.
 
-However, for our batch, the Stone-Weierstrass Theorem although introduced, was not tested.
+Additionally, towards the end of the semester, there were other topics such as Sequences
+of Functions, Series of Functions, and the C(M1, M2) Metric Space.
 
 **Relationship to MA1521:**
 
@@ -71,9 +71,11 @@ expected to do reasonably well for CS1231.
 It is not hard to see why, because this module is proof-heavy, and if you will,
 virtually 100% proof-based.
 
-Hence, Proof-techniques, from CS1231 are very helpful here. Things like Predicate Calculus, Propositional
-Logic, Various Proof Approaches (Direct Proof, Proof by Contraposition, and Proof by Contradiction)
-are commonly used throughout the course and students are assumed to have prior knowledge of those.
+Hence, Proof-techniques, from CS1231 are very helpful here.
+
+Things like Predicate Calculus, Propositional Logic, Various Proof Approaches (Direct Proof,
+Proof by Contraposition, and Proof by Contradiction) are commonly used throughout the course and
+students are assumed to have prior knowledge of those.
 
 Additionally, there was heavy use of Sets, I think it occurred in almost every Chapter.
 
@@ -88,11 +90,11 @@ whatsoever, but because I really liked Math.
 This was also my first Mathematics Minor module, but it was also one of the hardest Math module
 I’ve ever taken, compared to say MA1521, CS1232, MA1101R, ST2334, etc.
 
-Half the time I didn’t really know what I was doing, probably because my foundations on CS1231 and
-MA1522 weren’t that strong either, and personally my Math ain’t that good either.
+Half of the time I didn’t really know what I was doing, probably because my foundations on
+CS1231 and MA1521 weren’t that strong either, and personally my Math ain’t that good either.
 
-Also, I felt that the contents introduced to us in this module were quite a lot, probably I
-would say it’s roughly 1.5-2 times more than CS1231.
+Also, I felt that the contents introduced to us in this module were quite a lot, probably, I
+would say it’s roughly 1.5-2x more than CS1231.
 
 In comparison, I don’t think the non-S version cover analysis beyond the context of R, in
 the more generalised Metric Spaces.
@@ -152,4 +154,4 @@ Difficulty: 10/10
 
 Expected Grade: D
 
-Actual Grade: (to be updated..)
+Actual Grade: (to be updated)
