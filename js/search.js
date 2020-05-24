@@ -134,7 +134,7 @@ function autocompleteSearchSuggestions() {
             b = document.createElement("DIV");
             /*make the matching letters bold:*/
             // b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
-            b.innerHTML += "<small style='font-size:8px'>" + (arr[i].score * 100).toFixed(2) + "%</small> " + arr[i].title;
+            b.innerHTML += "<small style='font-size:9px'>" + (arr[i].score * 100).toFixed(2) + "%</small> " + arr[i].title;
             /*insert a input field that will hold the current array item's url:*/
             b.innerHTML += "<input type='hidden' value='" + arr[i].url + "'>";
             /*execute a function when someone clicks on the item value (DIV element):*/
@@ -232,7 +232,6 @@ function autocompleteSearchSuggestions() {
 
     /*execute a function when someone scrolls in the document:*/
     document.addEventListener("scroll", function (e) {
-        // alert("scrolled");
         closeAllLists(e.target);
 
         // Also remove the borderColor on the searchfield 
