@@ -42,7 +42,6 @@
         input{
             -webkit-appearance: none;
             padding: 10px;
-            margin: 10px;
             height: 35px;
             border:1px solid #eaeaea;
             box-shadow: none;
@@ -81,6 +80,11 @@
             color: #222;
         }
 
+        input[type="text"] {
+            background-color: #f1f1f1;
+            width: 100%;
+        }
+
         .autocomplete {
             width: 100%;
             position: relative;
@@ -94,10 +98,9 @@
             border-top: none;
             z-index: 99;
             /*position the autocomplete items to be the same width as the container:*/
-            top: 88%;
-            left: 2.5%;
-            right: 0%;
-            width: 100%;
+            top: 100%;
+            left: 0;
+            right: 0;
             font-size: 15px;
         }
 
