@@ -216,6 +216,13 @@ function autocompleteSearchSuggestions() {
         }
     }
 
+    inp.addEventListener("focus", function(e) {
+        e.preventDefault();
+        e.target.focus({
+            preventScroll: true
+        });
+    });
+
     /*execute a function when someone clicks in the document:*/
     document.addEventListener("click", function (e) {
         closeAllLists(e.target);
@@ -226,6 +233,7 @@ function autocompleteSearchSuggestions() {
 
     /*execute a function when someone scrolls in the document:*/
     document.addEventListener("scroll", function (e) {
+        inp.blur();
         closeAllLists(e.target);
 
         // Also remove the borderColor on the searchfield 
