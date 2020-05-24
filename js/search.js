@@ -224,4 +224,11 @@ function autocompleteSearchSuggestions() {
         // Also remove any 
         inp.style.borderColor = null;
     });
+
+    document.addEventListener("scroll", function (e) {
+        closeAllLists(e.target);
+
+        // Also remove any 
+        inp.style.borderColor = null;
+    });
 }
