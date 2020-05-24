@@ -93,9 +93,6 @@ function getSearchSuggestions(searchTerm) {
 
 function autocompleteSearchSuggestions() {
     var inp = document.getElementById('search-box');
-    inp.focus({
-        preventScroll: true
-    });
 
     /*the autocomplete function takes two arguments,
     the text field element and an array of possible autocompleted values:*/
@@ -219,6 +216,13 @@ function autocompleteSearchSuggestions() {
         }
     }
 
+    inp.addEventListener("focus", function(e) {
+        e.preventDefault();
+        e.target.focus({
+            preventScroll: true
+        });
+    });
+
     /*execute a function when someone clicks in the document:*/
     document.addEventListener("click", function (e) {
         closeAllLists(e.target);
@@ -230,22 +234,9 @@ function autocompleteSearchSuggestions() {
     /*execute a function when someone scrolls in the document:*/
     document.addEventListener("scroll", function (e) {
         inp.blur();
-        document.getElementsByTagName("footer")[0].click();
-    });
+        closeAllLists(e.target);
 
-    /**
- * Simulate a click event.
- * @public
- * @param {Element} elem  the element to simulate a click on
- */
-var simulateClick = function (elem) {
-	// Create our event (with options)
-	var evt = new MouseEvent('click', {
-		bubbles: true,
-		cancelable: true,
-		view: window
-	});
-	// If cancelled, don't dispatch our event
-	var canceled = !elem.dispatchEvent(evt);
-};
+        // Also remove the borderColor on the searchfield 
+        inp.style.borderColor = null;
+    });
 }
