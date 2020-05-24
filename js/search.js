@@ -168,7 +168,7 @@ function autocompleteSearchSuggestions() {
 
     /*execute a function presses a key on the keyboard:*/
     inp.addEventListener("keydown", function(e) {
-        // Over here, we just catch for a very specific scenerio
+        // Over here, we just catch for a very specific scenerio, for highlighting of search box
         if (this.value.length == 1 && (e.keyCode == 8 || e.keyCode == 46)) {
             inp.style.borderColor = "#4d90fe";
         }
@@ -188,6 +188,18 @@ function autocompleteSearchSuggestions() {
             currentFocus--;
             /*and and make the current item more visible:*/
             addActive(x);
+        } else if (e.keyCode == 13) {
+            /*If the ENTER key is pressed, submit the form if no dropdown current focus*/
+            if (currentFocus == -1) {
+                return;
+            }
+
+            e.preventDefault();
+
+            if (currentFocus > -1) {
+                /*and simulate a click on the "active" item:*/
+                if (x) x[currentFocus].click();
+            }
         }
     });
 
