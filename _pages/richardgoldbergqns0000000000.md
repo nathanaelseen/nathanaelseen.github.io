@@ -1,11 +1,11 @@
 ---
 layout: page
 title: Richard Goldberg Exercise 2.10 Q6
-description: Discusses the question and the intuition behind the proof, and the solution itself
+description: Discusses the given question, the intuition behind the proof, and the proof itself
 ---
 
-In this section, I will discuss the given question and the intuition behind the proof, and the
-solution itself.
+In this section, I will discuss the given question, the intuition behind the proof, and the
+proof itself.
 
 ---
 

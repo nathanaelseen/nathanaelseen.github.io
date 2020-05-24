@@ -136,7 +136,7 @@ _Theorem 4_ is valid even with the current restriction on $$a \ne e$$ removed.
 
 Now, as for _[Theorem 5](#theorem5)_, we actually need to keep the restriction there.
 
-For suppose the restriction was removed and $$a \cdot x = b = e$$ $$=> a \cdot x = e$$.
+For suppose the restriction was removed and $$a \cdot x = b = e$$ $$ => a \cdot x = e$$.
 Then either $$a = e$$ or $$x = e$$. But since we're finding an $$x$$, then $$a = e$$.
 
 However, before we prove the Theorem, we first need to prove the following Lemma.

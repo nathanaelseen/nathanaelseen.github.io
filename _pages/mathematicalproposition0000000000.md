@@ -1,11 +1,11 @@
 ---
 layout: page
 title: Mathematical Proposition
-description: Discusses the question and the intuition behind the proposition, and the solution itself
+description: Discusses the given proposition, the intuition behind the proof, and the proof itself
 ---
 
-In this section, I will discuss the given proposition and the intuition behind the proof, and the
-solution itself.
+In this section, I will discuss the given proposition, the intuition behind the proof, and the
+proof itself.
 
 ---
 
