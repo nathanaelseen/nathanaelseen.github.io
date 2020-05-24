@@ -69,6 +69,9 @@ function getSearchSuggestions(searchTerm) {
 
         var results = getSearchResults(searchTerm);
 
+        // Slice results, we only want the top-5 hits
+        results = results.slice(0, 5);
+
         var parsedResults = [];
 
         if (results.length) { // Are there any results?
