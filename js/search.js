@@ -94,6 +94,9 @@ function getSearchSuggestions(searchTerm) {
 
 function autocompleteSearchSuggestions() {
     var inp = document.getElementById('search-box');
+    inp.focus({
+        preventScoll: true
+    });
 
     /*the autocomplete function takes two arguments,
     the text field element and an array of possible autocompleted values:*/
@@ -221,16 +224,29 @@ function autocompleteSearchSuggestions() {
     document.addEventListener("click", function (e) {
         closeAllLists(e.target);
 
-        // Also remove any 
+        // Also remove the borderColor on the searchfield 
         inp.style.borderColor = null;
     });
 
+    /*execute a function when someone scrolls in the document:*/
     document.addEventListener("scroll", function (e) {
-        // alert("hi");
-        closeAllLists(e.target);
-
-        // Also remove any
         inp.blur();
-        inp.style.borderColor = null;
+        document.getElementsByTagName("footer")[0].click();
     });
+
+    /**
+ * Simulate a click event.
+ * @public
+ * @param {Element} elem  the element to simulate a click on
+ */
+var simulateClick = function (elem) {
+	// Create our event (with options)
+	var evt = new MouseEvent('click', {
+		bubbles: true,
+		cancelable: true,
+		view: window
+	});
+	// If cancelled, don't dispatch our event
+	var canceled = !elem.dispatchEvent(evt);
+};
 }
