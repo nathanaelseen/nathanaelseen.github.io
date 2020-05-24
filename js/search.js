@@ -137,7 +137,7 @@ function autocompleteSearchSuggestions() {
             b = document.createElement("DIV");
             /*make the matching letters bold:*/
             // b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
-            var hitScore = (arr[i].score * 100).toFixed(2);
+            var hitScore = (arr[i].score * 100).toFixed(1);
             b.innerHTML += "<small style='font-size:9px; border:1px solid grey; background: -webkit-linear-gradient(left, #00ff00 " + hitScore + "%, white 0%);'>" + hitScore + "%</small> " + arr[i].title;
             /*insert a input field that will hold the current array item's url:*/
             b.innerHTML += "<input type='hidden' value='" + arr[i].url + "'>";
