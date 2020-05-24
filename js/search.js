@@ -67,30 +67,11 @@ function getSearchSuggestions(searchTerm) {
         // searchTerm = searchTerm.toLowerCase(); // convert to lower case, only for suggestions
         document.getElementById('search-box').setAttribute("value", searchTerm);
 
-        // Initalize lunr with the fields it will be searching on. I've given title
-        // a boost of 10 to indicate matches on this field are more important.
-        var idx = lunr(function () {
-            this.field('id');
-            this.field('title', { boost: 10 });
-            this.field('author');
-            this.field('category');
-            this.field('content');
-        });
-
-        for (var key in window.store) { // Add the data to lunr
-            idx.add({
-                'id': key,
-                'title': window.store[key].title,
-                'author': window.store[key].author,
-                'category': window.store[key].category,
-                'content': window.store[key].content
-            });
-        }
-
-        var results = idx.search(searchTerm); // Get lunr to perform a search
+        var results = getSearchResults(searchTerm);
 
         var parsedResults = [];
 
+        console.log(results);
         if (results.length) { // Are there any results?
             var appendString = '';
 
@@ -100,7 +81,8 @@ function getSearchSuggestions(searchTerm) {
                 if (item.title) {
                     parsedResults.push({
                         'title': item.title,
-                        'url': item.url
+                        'url': item.url,
+                        'score': results[i].score
                     });
                 }
             }
@@ -153,7 +135,7 @@ function autocompleteSearchSuggestions() {
             b = document.createElement("DIV");
             /*make the matching letters bold:*/
             // b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
-            b.innerHTML += arr[i].title;
+            b.innerHTML += "<small style='font-size:8px'>" + (arr[i].score * 100).toFixed(2) + "%</small> " + arr[i].title;
             /*insert a input field that will hold the current array item's url:*/
             b.innerHTML += "<input type='hidden' value='" + arr[i].url + "'>";
             /*execute a function when someone clicks on the item value (DIV element):*/
