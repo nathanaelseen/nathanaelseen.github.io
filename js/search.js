@@ -216,13 +216,6 @@ function autocompleteSearchSuggestions() {
         }
     }
 
-    var isInpFocus = false;
-
-    inp.addEventListener("focus", function(e) {
-        alert("focus event");
-        isInpFocus = true;
-    });
-
     /*execute a function when someone clicks in the document:*/
     document.addEventListener("click", function (e) {
         closeAllLists(e.target);
@@ -233,17 +226,12 @@ function autocompleteSearchSuggestions() {
 
     /*execute a function when someone scrolls in the document:*/
     document.addEventListener("scroll", function (e) {
-        alert("scroll event");
         closeAllLists(e.target);
 
         // Also remove the borderColor on the searchfield 
         inp.style.borderColor = null;
         // inp.classList.remove("input:hover");
 
-        if (!isInpFocus) {
-            inp.blur();
-        } else {
-            isInpFocus = false;
-        }
+        inp.blur();
     });
 }

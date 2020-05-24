@@ -52,10 +52,6 @@
             border-radius: 0px;
         }
 
-        input:hover{
-            border-color: #a0a0a0 #b9b9b9 #b9b9b9 #b9b9b9;
-        }
-
         input:focus{
             border-color:#4d90fe;
         }
@@ -74,10 +70,17 @@
             height:35px;
         }
 
-        input[type="submit"]:hover {
-            background: #f8f8f8;
-            border: 1px solid #c6c6c6;
-            color: #222;
+        /* Only apply hover styles on devices that can actually hover */
+        @media (hover: hover) {
+            input:hover{
+                border-color: #a0a0a0 #b9b9b9 #b9b9b9 #b9b9b9;
+            }
+
+            input[type="submit"]:hover {
+                background: #f8f8f8;
+                border: 1px solid #c6c6c6;
+                color: #222;
+            }
         }
 
         input[type="text"] {
