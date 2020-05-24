@@ -222,6 +222,10 @@ function autocompleteSearchSuggestions() {
 
         // Also remove the borderColor on the searchfield 
         inp.style.borderColor = null;
+
+        if (e.srcElement.id == "search-box") {
+            inp.focus();
+        }
     });
 
     /*execute a function when someone scrolls in the document:*/
