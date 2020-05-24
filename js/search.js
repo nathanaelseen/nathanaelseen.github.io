@@ -226,9 +226,11 @@ function autocompleteSearchSuggestions() {
     });
 
     document.addEventListener("scroll", function (e) {
+        // alert("hi");
         closeAllLists(e.target);
 
-        // Also remove any 
+        // Also remove any
+        inp.blur();
         inp.style.borderColor = null;
     });
 }
