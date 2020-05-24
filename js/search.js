@@ -71,7 +71,6 @@ function getSearchSuggestions(searchTerm) {
 
         var parsedResults = [];
 
-        console.log(results);
         if (results.length) { // Are there any results?
             var appendString = '';
 
@@ -95,7 +94,7 @@ function getSearchSuggestions(searchTerm) {
 function autocompleteSearchSuggestions() {
     var inp = document.getElementById('search-box');
     inp.focus({
-        preventScoll: true
+        preventScroll: true
     });
 
     /*the autocomplete function takes two arguments,
