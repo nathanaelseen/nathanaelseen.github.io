@@ -216,12 +216,7 @@ function autocompleteSearchSuggestions() {
         }
     }
 
-    inp.addEventListener("focus", function(e) {
-        e.preventDefault();
-        e.target.focus({
-            preventScroll: true
-        });
-    });
+    var inpIsClicked = false;
 
     /*execute a function when someone clicks in the document:*/
     document.addEventListener("click", function (e) {
@@ -229,16 +224,24 @@ function autocompleteSearchSuggestions() {
 
         // Also remove the borderColor on the searchfield 
         inp.style.borderColor = null;
+
+        if (e.srcElement.id == "search-box") {
+            inpIsClicked = true;
+        }
     });
 
     /*execute a function when someone scrolls in the document:*/
     document.addEventListener("scroll", function (e) {
-        inp.blur();
+        // alert("scrolled");
         closeAllLists(e.target);
 
         // Also remove the borderColor on the searchfield 
         inp.style.borderColor = null;
-        // inp.classList.remove("input:hover");
+
+        if (inpIsClicked) {
+            inpIsClicked = false; // Reset
+            return;
+        }
 
         inp.blur();
     });
