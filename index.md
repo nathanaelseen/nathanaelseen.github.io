@@ -1,18 +1,16 @@
 ---
 layout: page
 title: Home
-description: Your one-stop Wiki for Computer Sciene, Mathematics, and Tech Stuffs
+description: Your one-stop Wiki for any Computer Sciene, Mathematics, and Tech Stuffs
 ---
 
 Hi, thank you for visiting my personal website.
 
-I'm Nathanael Seen, and I'm currently studying Computer Science (Mathematics minor) at [NUS](http://www.nus.edu.sg/).
+Please visit the [About me](https://www.google.com.sg) page if you would like to
+learn more about me, and [Portfolio](https://www.google.com.sg) page to view my Portfolio.
 
-I've learnt quite a lot of interesting stuffs over at the University, and I thought it would be good to share some of
-them.
+Otherwise, just treat this website, as your one-stop _Wiki_
+for any **Computer Science**, **Mathematics**, and **Tech** stuffs.
 
-Just treat this website, as your one-stop _Google_ for **Computer Science**, **Mathematics**, and other
-**Tech** stuffs.
-
-There is a wealth of information on this site, what you manage to find depends on how
-and what you **Search**!
+There is a wealth of information on this site, and what you manage to find depends
+on how and what you **Search**!

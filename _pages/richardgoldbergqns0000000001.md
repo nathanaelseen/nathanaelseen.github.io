@@ -14,20 +14,20 @@ _**Question**_
 Let $$S$$ be a sequence. Prove that every subsequence of a subsequence of S is itself a subsequence
 of S.
 
-_**Intuition**_
+[//]: # _**Intuition**_
 
 _**Proof**_
 
 Let S be a sequence in the set $$A$$.
 
-We note that, it is given by the function; $$f: \mathbb{N} \rightarrow A$$.
+We note that, it is given by the function; $$f: \mathbb{N} \to A$$.
 
 Now, consider an (arbitary) subsequence $$S'$$ of $$S$$,which has the form $$f \circ g$$,
-where $$h: \mathbb{N} \rightarrow \mathbb{N}$$, satisfies $$h(n) < h(n + 1)$$,
+where $$h: \mathbb{N} \to \mathbb{N}$$, satisfies $$h(n) < h(n + 1)$$,
 for all $$n$$.
 
 A subsequence $$S''$$ of $$S'$$ has the form $$(f \circ g) \circ h$$, where
-$$h: \mathbb{N} \rightarrow \mathbb{N}$$.
+$$h: \mathbb{N} \to \mathbb{N}$$.
 
 (Claim: $$(g \circ h)(n) < (g \circ h)(n + 1)$$, $$\forall n \in \mathbb{N}$$)
 

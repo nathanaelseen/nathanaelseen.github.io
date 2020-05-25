@@ -9,8 +9,9 @@ abstract perspective.
 
 ---
 
-In [Algebra](https://en.wikipedia.org/wiki/Algebra), a Field is a [Set](https://en.wikipedia.org/wiki/Set), by which two important
-operations, namely; **Addition** and **Multiplication**, over the elements (in the Set) are defined.
+In [Algebra](https://en.wikipedia.org/wiki/Algebra), a Field is a [Set](https://en.wikipedia.org/wiki/Set),
+by which two important operations, namely; **Addition** and **Multiplication**, over the
+elements (in the Set) are defined.
 
 _**Definition 1**_. A Field is a 5-tuple, denoted by; $$\langle F, +, \cdot, e, u \rangle$$, where
   - $$F$$ is a [Set](https://en.wikipedia.org/wiki/Set_(mathematics)) consisting of all the elements

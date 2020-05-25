@@ -1,0 +1,23 @@
+---
+layout: page
+title: Richard Goldberg Exercise 2.2 Q1
+description: Discusses the given question, the intuition behind the proof, and the proof itself
+---
+
+In this section, I will discuss the given question, the intuition behind the proof, and the
+proof itself.
+
+---
+
+_**Question**_
+
+If $$(s_n)_{n=1}^{\infty}$$ is sequence of real numbers, if $$s_n \leqslant M$$
+$$(n \in \mathbb{N})$$, and if $$lim_{n \to \infty} s_n = L$$, prove $$L \leqslant M$$.
+
+[//]: # _**Intuition**_
+
+_**Proof**_
+
+Since $${M - s_n}_{n=1}^{\infty}$$ converges to $$(M - L) \in \mathbb{R}$$, and
+$$s_n \leqslant M$$ $$ => M - s_n \geqslant 0$$ $$(\forall n \in \mathbb{N})$$,
+then, $$M - L \geqslant 0$$, as needed. $$\blacksquare$$

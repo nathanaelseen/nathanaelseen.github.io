@@ -17,7 +17,7 @@ Define, $$A + B = \{a + b: a \in A, b \in B\}$$.
 
 Show that $$A + B$$ is bounded above, and that, $$sup(A + B) = sup A + sup B$$
 
-_**Intuition**_
+[//]: # _**Intuition**_
 
 _**Proof**_
 
@@ -35,8 +35,8 @@ Thus, $$A + B$$ is bounded above.
 
 Suppose the contrary, that $$sup A + sup B \ne sup (A + B)$$.
 
-Then $$\exists x \in \mathbb{R} \ni a + b \leqslant x < sup A + sup B$$
-$$(\forall a \in A, b \in B)$$
+Then, $$\exists x \in \mathbb{R} \ni a + b \leqslant x < sup A + sup B$$
+$$(\forall a \in A, b \in B)$$.
 
 Hence, $$x < sup A + sup B => x - sup A < sup B$$.
 
