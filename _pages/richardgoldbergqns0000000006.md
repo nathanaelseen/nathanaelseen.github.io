@@ -1,0 +1,43 @@
+---
+layout: page
+title: Richard Goldberg Exercise 2.3 Q1
+description: Discusses the given question, the intuition behind the proof, and the proof itself
+---
+
+In this section, I will discuss the given question, the intuition behind the proof, and the
+proof itself.
+
+---
+
+_**Question**_
+
+For any $$a, b \in \mathbb{R}$$ show that
+$$\lvert \lvert a \rvert - \lvert b \rvert \rvert \leqslant \lvert a - b \rvert$$.
+
+Then prove that $$(\lvert s_n \rvert)_{n=1}^\infty$$ converges to $$\lvert L \rvert$$
+if $$(s_n)_{n=1}^\infty$$ converges to $$L$$.
+
+[//]: # _**Intuition**_
+
+_**Proof**_
+
+We note that, $$\lvert a \rvert = \lvert (a - b) + b \rvert$$
+$$ \leqslant \lvert a - b \rvert + \lvert b \rvert$$
+$$ => \lvert a \rvert - \lvert b \rvert \leqslant \lvert a - b \rvert$$.
+
+Similarly, for, $$\lvert b \rvert = \lvert (b - a) + a \rvert$$
+$$ \leqslant \lvert b - a \rvert + \lvert a \rvert$$
+$$ => \lvert b \rvert - \lvert a \rvert \leqslant \lvert b - a \rvert$$
+$$ = \lvert a - b \rvert$$.
+
+Since, $$\lvert \lvert a \rvert - \lvert b \rvert \rvert$$ is either;
+$$\lvert a \rvert - \lvert b \rvert$$ or $$\lvert b \rvert - \lvert a \rvert$$,
+then, $$\lvert \lvert a \rvert - \lvert b \rvert \rvert \leqslant \lvert a - b \rvert$$.
+$$\blacksquare$$
+
+Let $$\epsilon > 0$$, be given.
+
+Since, $$(s_n)_{n=1}^\infty$$ converges to $$L$$,
+$$\exists N \in \mathbb{N} \ni \lvert s_n - L \rvert < \epsilon$$ $$(n \geqslant N)$$.
+
+Hence, $$lim_{n \to \infty} \lvert s_n \rvert = \lvert L \rvert$$. $$\blacksquare$$
