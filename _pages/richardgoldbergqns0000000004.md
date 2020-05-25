@@ -22,10 +22,12 @@ Let $$\epsilon > 0$$, be given.
 
 Suppose the contary, that $$L > M$$.
 
-Then, $$L \leqslant M + \epsilon$$.
+Also, by the hypothesis, $$L \leqslant M + \epsilon$$.
 
 Thus, $$M < L \leqslant M + \epsilon$$ $$ => M - \epsilon < L \leqslant M + \epsilon$$
 (since $$\epsilon > 0$$) $$ => \lvert L - M \rvert < \epsilon$$ $$(\forall \epsilon > 0)$$.
+
+We note that since $$L > M$$, by our assumption, $$\lvert L - M \rvert > 0$$.
 
 But, in particular, pick an $$\epsilon_a < \lvert L - M \rvert < \epsilon_a$$.
 
