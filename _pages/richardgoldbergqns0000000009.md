@@ -18,7 +18,7 @@ converges to $$0$$.
 
 _**Proof**_
 
-Let $$\epsilon > 0$$ be given.
+Let $$\epsilon > 0$$, be given.
 
 Since, $$(s_n)_{n=1}^\infty$$ converges to $$0$$,
 $$\exists N \in \mathbb{N} \ni \lvert s_n - 0 \rvert = \lvert s_n \rvert$$ $$ < \epsilon$$
