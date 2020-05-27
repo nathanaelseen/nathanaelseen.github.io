@@ -32,8 +32,8 @@ $$(s_n)_{n=1}^\infty$$ is (countably) infinite.
 Also, the closed interval has length $$2M > 0$$.
 
 Now, we could divide this interval into $$2$$ parts of length; $$2M - \epsilon$$ and
-$$\epsilon$$ respectively, such that each part has $$N_1$$ and $$N_2$$ terms and the total
-number of terms is $$N = N_1 + N_2$$.
+$$\epsilon$$ respectively, such that each part has $$N_1$$ and $$N_2$$ terms, and
+the total number of terms is $$N = N_1 + N_2$$.
 
 (Here, we note that $$\epsilon < 2M$$.)
 
