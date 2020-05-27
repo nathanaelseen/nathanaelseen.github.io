@@ -68,5 +68,5 @@ Then, $$s_n \leqslant -M$$, and $$(s_n)_{n=1}^\infty$$ diverges to minus infinit
 
 But again, from our hypothesis, it converges to some $$L \ne 0$$. Contradiction.
 
-Since, in all Cases, we arrive at a Contradiction, the theorem is true, and
+Since, in all Cases, we reach a Contradiction, the theorem is true, and
 $$(s_n)_{n=1}^\infty$$ indeed oscillates. $$\blacksquare$$
