@@ -33,6 +33,7 @@
         };
     </script>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="{{ 'styles.css' | relative_url }}">
     <link rel="shortcut icon" href="{{ '/assets/favicon.ico' | relative_url }}">
     <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ 'atom.xml' | relative_url }}">
@@ -57,10 +58,8 @@
                 border-color: #a0a0a0 #b9b9b9 #b9b9b9 #b9b9b9;
             }
 
-            input[type="submit"]:hover {
-                background: #f8f8f8;
-                border: 1px solid #c6c6c6;
-                color: #222;
+            button[type="submit"]:hover {
+                background: #0b7dda;
             }
 
             .autocomplete-items div:hover {
@@ -73,10 +72,10 @@
             border-color:#4d90fe;
         }
 
-        input[type="submit"] {
+        button[type="submit"] {
             border-radius: 0px;
-            background-color: DodgerBlue;
-            color: #fff;
+            background: #2196F3;
+            color: white;
             border: 0;
             box-shadow: none;
             cursor: pointer;
