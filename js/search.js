@@ -100,7 +100,7 @@ function autocompleteSearchSuggestions() {
     inp.addEventListener("focus", function(e) {
         var val = this.value;
 
-        // TODO: Modularise this logic (handler) which is used in oninput event below
+        // TODO: Modularise this logic (handler) which is used in oninput and scroll events below
         // If there are text in search box, don't show suggestions
         if (val) {
             return false;
@@ -277,6 +277,27 @@ function autocompleteSearchSuggestions() {
 
         if (inpIsClicked) {
             inpIsClicked = false; // Reset
+
+            var val = this.value;
+
+            if (val) {
+                return;
+            }
+
+            // If there is currently no text, in search field, show the suggestions
+            /*create a DIV element that will contain the items (values):*/
+            a = document.createElement("DIV");
+            a.setAttribute("id", this.id + "autocomplete-list");
+            a.setAttribute("class", "autocomplete-items");
+
+            /*append the DIV element as a child of the autocomplete container:*/
+            this.parentNode.appendChild(a);
+
+            b = document.createElement("DIV");
+            b.innerHTML += "Suggested Searches:";
+            b.innerHTML += "<ul><li>NUS Module Review</li><li>Richard Goldberg Solutions</li><li>Fields</li><li>Computability</li></ul>";
+
+            a.appendChild(b);
             return;
         }
 
