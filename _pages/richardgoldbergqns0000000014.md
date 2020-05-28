@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Richard Goldberg Exercise 2.6 Q3
+title: Richard Goldberg Exercise 2.6 Q6
 description: Discusses the given question, the intuition behind the proof, and the proof itself
 ---
 
