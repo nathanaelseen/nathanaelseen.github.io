@@ -19,33 +19,24 @@ $$\lim\limits_{n \to \infty} s_n \leqslant \lim\limits_{n \to\infty} t_n$$.
 
 _**Proof**_
 
-Let $$\epsilon > 0$$, be given.
+Since $$(s_n)_{n=1}^\infty$$ and $$(t_n)_{n=1}^\infty$$ are nondecreasing and bounded (above),
+they are convergent to some $$L_1 = \lim\limits_{n \to \infty} s_n$$, and
+$$L_2 = \lim\limits_{n \to \infty} t_n$$.
 
-Since, the sequence $$(s_n)_{n=1}^\infty$$ is bounded,
-$$\exists M \in \mathbb{R} \ni \left\lvert s_n \right\rvert \leqslant M$$
-$$(\forall n \in \mathbb{N})$$ $$ => -M \leqslant s_n \leqslant M$$
-$$(\forall n \in \mathbb{N})$$.
+Also, we note that $$L_1 = \sup\{s_1, s_2, ...\}$$, and $$L_2 = \sup\{t_1, t_2, ...\}$$.
 
-Now, we note that within the closed interval $$[-M, M]$$, the number of terms in
-$$(s_n)_{n=1}^\infty$$ is (countably) infinite.
+Assume, the contrary, that $$L_1 > L_2$$, instead.
 
-Also, the closed interval has length $$2M > 0$$.
+Then, $$L_1 - \epsilon = L_2$$, is not an u.b of $$\{s_1, s_2, ...\}$$
+(for $$\epsilon > 0$$).
 
-Now, we could divide this interval into $$2$$ parts of length; $$2M - \epsilon$$ and
-$$\epsilon$$ respectively, such that each part has $$N_1$$ and $$N_2$$ terms, and
-the total number of terms is $$N = N_1 + N_2$$.
+Thus, $$\exists k \ni L_2 < s_k$$.
 
-(Here, we note that $$\epsilon < 2M$$.)
+But, $$L_2 \geqslant t_n$$ $$(\forall n \in \mathbb{N})$$, and in particular,
+$$L_2 \geqslant t_k$$.
 
-Since $$N$$ is countably infinite, we can infer that either both $$N_1$$ and $$N_2$$ are
-countably infinite, or that one of them is.
+Thus, $$t_k < L_2$$ $$ < s_k$$ $$ => t_k < s_k$$.
 
-In either case, one of them is (guaranteed) to be countably infinite, and hence
-we obtain a set $$J \subseteq \mathbb{R}$$ of finite arbitrary length, which
-contains infinite elements.
+But, we have from the hypothesis that $$s_n \leqslant t_n$$ $$(\forall n \in \mathbb{N})$$.
 
-Now, for the case of any $$\epsilon \geqslant 2M$$, we can always box our closed interval $$[-M, M]$$,
-with that $$\epsilon > 0$$.
-
-Thus, for that $$\epsilon$$, all infinite elements of the sequence $$(s_n)_{n=1}^\infty$$
-is present there. $$\blacksquare$$
+Since, we have a Contradiction, the thoerem is proved. $$\blacksquare$$

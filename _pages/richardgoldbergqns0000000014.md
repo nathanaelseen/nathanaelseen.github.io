@@ -1,0 +1,42 @@
+---
+layout: page
+title: Richard Goldberg Exercise 2.6 Q3
+description: Discusses the given question, the intuition behind the proof, and the proof itself
+---
+
+In this section, I will discuss the given question, the intuition behind the proof, and the
+proof itself.
+
+---
+
+_**Question**_
+
+For $$n \in \mathbb{N}$$,
+let $$s_n = \dfrac{1 \cdot 3 \cdot 5 \cdot \cdot \cdot (2n - 1)}{2 \cdot 4 \cdot 6 \cdot \cdot \cdot 2n}$$.
+
+Prove that
+$$(s_n)_{n=1}^\infty$$ is convergent and $$\lim\limits_{n \to \infty} s_n \leqslant \dfrac{1}{2}$$.
+
+[//]: # _**Intuition**_
+
+_**Proof**_
+
+(WTS: $$(s_n)_{n=1}^\infty$$ is convergent $$<=> (s_n)_{n=1}^\infty$$ is bounded
+below and monotonic nonincreasing.)
+
+We note that $$s_1 = \dfrac{1}{2}$$, $$s_2 = s_1 \cdot \dfrac{3}{4}$$ $$ < s_1$$,
+$$s_3 = s_2 \cdot \dfrac{5}{6}$$ $$ < s_2$$, and in general,
+$$s_k = s_{k - 1} \cdot \dfrac{2k - 1}{2k}$$ $$ < s_{k - 1}$$
+(since, $$\dfrac{2k - 1}{2k} < 1$$).
+
+Hence, the sequence $$(s_n)_{n=1}^\infty$$ is nonincreasing; $$\dfrac{1}{2} = s_1$$
+$$ > s_2 > s_3$$ $$ > ... > s_{k - 1}$$ $$ > s_k > s_{k + 1}$$ $$ > ...$$.
+
+However, we also note that since $$s_1 = \dfrac{1}{2}$$, and that,
+$$0 < \dfrac{2k - 1}{2k}$$ $$ < 1$$, since, $$k > 0$$, the sequence is bounded
+below by $$0$$.
+
+Thus, $$(s_n)_{n=1}^\infty$$ is convergent.
+
+Also, we note that $$\inf\{s_1, s_2, ..., s_k, s_{k + 1}, ...\} \leqslant \dfrac{1}{2}$$,
+as $$s_1 = \dfrac{1}{2}$$. $$\blacksquare$$
