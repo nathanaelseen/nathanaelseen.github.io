@@ -114,7 +114,7 @@ function autocompleteSearchSuggestions() {
         this.parentNode.appendChild(a);
 
         b = document.createElement("DIV");
-        b.innerHTML += "Suggested Searches:";
+        b.innerHTML += "Suggestions:";
         b.innerHTML += "<ul><li>NUS Module Review</li><li>Richard Goldberg Solutions</li><li>Fields</li><li>Computability</li></ul>";
 
         a.appendChild(b);
@@ -137,7 +137,7 @@ function autocompleteSearchSuggestions() {
             this.parentNode.appendChild(a);
 
             b = document.createElement("DIV");
-            b.innerHTML += "Suggested Searches:";
+            b.innerHTML += "Suggestions:";
             b.innerHTML += "<ul><li>NUS Module Review</li><li>Richard Goldberg Solutions</li><li>Fields</li><li>Computability</li></ul>";
 
             a.appendChild(b);
@@ -294,7 +294,7 @@ function autocompleteSearchSuggestions() {
             inp.parentNode.appendChild(a);
 
             b = document.createElement("DIV");
-            b.innerHTML += "Suggested Searches:";
+            b.innerHTML += "Suggestions:";
             b.innerHTML += "<ul><li>NUS Module Review</li><li>Richard Goldberg Solutions</li><li>Fields</li><li>Computability</li></ul>";
 
             a.appendChild(b);
