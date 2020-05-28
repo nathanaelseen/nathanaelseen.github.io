@@ -37,4 +37,4 @@ $$ <=> \left\lvert \dfrac{1}{2 \sqrt{n}} - 0 \right\rvert \leqslant \left\lvert 
 $$ => \left\lvert \dfrac{1}{2 \sqrt{n}} - 0 \right\rvert < \epsilon$$
 $$ => \left\lvert \left(\sqrt{n + 1} - \sqrt{n}\right) - 0 \right\rvert < \epsilon$$.
 
-Thus, $$lim_{n \to \infty} \left(\sqrt{n + 1} - \sqrt{n}\right) = 0$$. $$\blacksquare$$
+Thus, $$\lim\limits_{n \to \infty} \left(\sqrt{n + 1} - \sqrt{n}\right) = 0$$. $$\blacksquare$$

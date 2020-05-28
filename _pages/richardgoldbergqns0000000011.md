@@ -11,7 +11,7 @@ proof itself.
 
 _**Question**_
 
-Prove that if $$lim_{n \to \infty} \dfrac{s_n}{n} = L \ne 0$$, then $$(s_n)_{n=1}^\infty$$
+Prove that if $$\lim\limits_{n \to \infty} \dfrac{s_n}{n} = L \ne 0$$, then $$(s_n)_{n=1}^\infty$$
 is not bounded.
 
 [//]: # _**Intuition**_
@@ -25,7 +25,7 @@ Also, assume the contrary, that $$(s_n)_{n=1}^\infty$$ is bounded.
 Then, $$\exists M \in \mathbb{R} \ni \lvert s_{n_1} \rvert \leqslant M$$
 $$(\forall n_1 \in \mathbb{N})$$.
 
-(In particular, let's claim that $$lim_{n \to \infty} \left(\dfrac{s_n}{n}\right) = 0$$.)
+(In particular, let's claim that $$\lim\limits_{n \to \infty} \left(\dfrac{s_n}{n}\right) = 0$$.)
 
 Pick, $$N \in \mathbb{N} \ni N > \dfrac{M}{\epsilon}$$ $$ <=> N\epsilon > M$$
 $$ <=> N\epsilon > s_{n_1}$$ $$ <=> s_{n_1} < N\epsilon$$
@@ -40,4 +40,4 @@ $$ < \epsilon$$ $$(\forall n_1 \in \mathbb{N})$$.
 Hence, we have found an $$N$$, where, $$\left\lvert \dfrac{s_{n_1}}{n} - 0 \right\rvert < \epsilon$$
 $$(n \geqslant N$$, and $$\forall n_1 \in \mathbb{N})$$.
 
-Thus, $$lim_{n \to \infty} \dfrac{s_n}{n} = 0$$, as needed. $$\blacksquare$$
+Thus, $$\lim\limits_{n \to \infty} \dfrac{s_n}{n} = 0$$, as needed. $$\blacksquare$$

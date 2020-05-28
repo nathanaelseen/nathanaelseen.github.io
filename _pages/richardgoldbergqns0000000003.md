@@ -12,12 +12,12 @@ proof itself.
 _**Question**_
 
 If $$(s_n)_{n=1}^{\infty}$$ is sequence of real numbers, if $$s_n \leqslant M$$
-$$(n \in \mathbb{N})$$, and if $$lim_{n \to \infty} s_n = L$$, prove $$L \leqslant M$$.
+$$(n \in \mathbb{N})$$, and if $$\lim\limits_{n \to \infty} s_n = L$$, prove $$L \leqslant M$$.
 
 [//]: # _**Intuition**_
 
 _**Proof**_
 
-Since $${M - s_n}_{n=1}^{\infty}$$ converges to $$(M - L) \in \mathbb{R}$$, and
+Since $$(M - s_n)_{n=1}^{\infty}$$ converges to $$(M - L) \in \mathbb{R}$$, and
 $$s_n \leqslant M$$ $$ => M - s_n \geqslant 0$$ $$(\forall n \in \mathbb{N})$$,
 then, $$M - L \geqslant 0$$, as needed. $$\blacksquare$$

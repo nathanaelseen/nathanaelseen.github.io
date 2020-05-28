@@ -1,20 +1,21 @@
 ---
 layout: page
-title: Order Complete Fields
-description: Covers what an algebraic Field is and what it means for a Field to be order complete
+title: Fields
+description: Covers what an algebraic Field in abstract Algebra is, and various operations over a Field
 ---
 
-In this section, we take a step back and look at (High School) Algebra, but from a more
-abstract perspective.
+In this section, we take a look at what an algebraic Field is, and the various operations
+over a Field. Using Fields, we shall also discuss (High School) Algebra but from a more
+abstract perpective.
 
 ---
 
-In [Algebra](https://en.wikipedia.org/wiki/Algebra), a Field is a [Set](https://en.wikipedia.org/wiki/Set),
+In [Algebra](https://en.wikipedia.org/wiki/Algebra), a Field is a [Set](sets),
 by which two important operations, namely; **Addition** and **Multiplication**, over the
 elements (in the Set) are defined.
 
 _**Definition 1**_. A Field is a 5-tuple, denoted by; $$\langle F, +, \cdot, e, u \rangle$$, where
-  - $$F$$ is a [Set](https://en.wikipedia.org/wiki/Set_(mathematics)) consisting of all the elements
+  - $$F$$ is a [Set](sets) consisting of all the elements
     in the Field
   - $$+$$ is the Additive operator
   - $$\cdot$$ is the Multiplicative operator

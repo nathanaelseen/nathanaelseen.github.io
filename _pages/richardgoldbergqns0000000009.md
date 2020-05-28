@@ -28,4 +28,4 @@ But, $$\lvert s_n \rvert = \lvert 1 \rvert \cdot \lvert s_n \rvert$$
 $$ = \lvert (-1)^n \rvert \cdot \lvert s_n \rvert = \lvert (-1)^n s_n \rvert$$
 $$ < \epsilon$$ $$(n \geqslant N)$$.
 
-Thus, $$lim_{n \to \infty} (-1)^n s_n = 0$$. $$\blacksquare$$
+Thus, $$\lim\limits_{n \to \infty} (-1)^n s_n = 0$$. $$\blacksquare$$

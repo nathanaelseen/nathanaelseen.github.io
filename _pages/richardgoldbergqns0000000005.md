@@ -11,7 +11,7 @@ proof itself.
 
 _**Question**_
 
-Prove $$lim_{n \to \infty} \dfrac{2n}{n + 3} = 2$$.
+Prove $$\lim\limits_{n \to \infty} \dfrac{2n}{n + 3} = 2$$.
 
 [//]: # _**Intuition**_
 
@@ -19,7 +19,7 @@ _**Proof**_
 
 Let $$\epsilon > 0$$, be given.
 
-(WTS: $$lim_{n \to \infty} \dfrac{2n}{n + 3} = 2$$)
+(WTS: $$\lim\limits_{n \to \infty} \dfrac{2n}{n + 3} = 2$$)
 
 Pick, $$N \in \mathbb{N} \ni N \geqslant \dfrac{6}{\epsilon} - 3$$
 $$ <=> N \geqslant \dfrac{6 - 3\epsilon}{\epsilon}$$
@@ -38,4 +38,4 @@ $$ < \epsilon$$.
 Hence, we have found an $$N$$, where, $$\left\lvert \dfrac{2n}{n + 3} - 2 \right\rvert < \epsilon$$
 $$(n \geqslant N)$$.
 
-This proves, $$lim_{n \to \infty} \dfrac{2n}{n + 3} = 2$$, as needed. $$\blacksquare$$
+This proves, $$\lim\limits_{n \to \infty} \dfrac{2n}{n + 3} = 2$$, as needed. $$\blacksquare$$

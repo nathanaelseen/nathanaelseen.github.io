@@ -40,4 +40,4 @@ Let $$\epsilon > 0$$, be given.
 Since, $$(s_n)_{n=1}^\infty$$ converges to $$L$$,
 $$\exists N \in \mathbb{N} \ni \lvert s_n - L \rvert < \epsilon$$ $$(n \geqslant N)$$.
 
-Hence, $$lim_{n \to \infty} \lvert s_n \rvert = \lvert L \rvert$$. $$\blacksquare$$
+Hence, $$\lim\limits_{n \to \infty} \lvert s_n \rvert = \lvert L \rvert$$. $$\blacksquare$$
