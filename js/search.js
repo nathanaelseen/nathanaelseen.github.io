@@ -298,7 +298,7 @@ function autocompleteSearchSuggestions() {
             b.innerHTML += "<ul><li>NUS Module Review</li><li>Richard Goldberg Solutions</li><li>Fields</li><li>Computability</li></ul>";
 
             a.appendChild(b);
-            alert("return me");
+
             return;
         }
 
