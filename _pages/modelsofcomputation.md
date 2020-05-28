@@ -21,20 +21,22 @@ forms of Computers.
 Some examples include (from the least to most powerful):
  - Combinational Logic (includes basic digital circuitry, designed using Boolean Algebra)
  - Push-down Automata
- - Finite State Machines (FSM):
+ - <a name="finitestatemachine"></a> Finite State Machines (FSM):
    - (Examples include PCs, Laptops, Mobile Phones. These devices have (finite) RAM slots,
       hence States, and when all slots are used, the Computer would need to free up some
       slots and therefore reuse those slots, or States. Hence the term Finite State
       Machines.)
  - Context-Free Grammer/Languages
- - Turing Machine (most powerful model, invented by Alan Turing himself)
+ - <a name="turingmachine"></a> Turing Machine (most powerful model, invented
+   by [Alan Turing](https://en.wikipedia.org/wiki/Alan_Turing) himself)
 
 Despite these powerful and potentially ‘infinite’ ‘computers’, the Halting Problem
 (more details discussed in another article), is an example of a non-computable problem.
 
 You might be wondering then; is this non-computability due to the (limited) design?
 
-Actually nope, it stems from a limitation in Mathematics (Godel’s Incompleteness Theorem).
+<a name="godelincompletenesstheorem"></a> Actually nope, it stems from a limitation
+in Mathematics (Godel’s Incompleteness Theorem).
 
 This Theorem states that a formal Mathematical system cannot prove it’s own consistency.
 
