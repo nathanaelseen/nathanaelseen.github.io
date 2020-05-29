@@ -1,0 +1,27 @@
+---
+layout: page
+title: Richard Goldberg Exercise 2.6 Q10(a)
+description: Discusses the given question, the intuition behind the proof, and the proof itself
+---
+
+In this section, I will discuss the given question, the intuition behind the proof, and the
+proof itself.
+
+---
+
+_**Question**_
+
+For $$n \in \mathbb{N}$$, let $$t_n = 1 + \dfrac{1}{1!} + \dfrac{1}{2!} + ... + \dfrac{1}{n!}$$.
+
+Prove that $$(t_n)_{n=1}^\infty$$ is nondecreasing.
+
+[//]: # _**Intuition**_
+
+_**Proof**_
+
+We note that, $$t_1 = 1$$, $$t_2 = t_1 + \dfrac{1}{1!}$$, $$t_3 = t_2 + \dfrac{1}{2!}$$,
+and in general, $$t_k = t_{k - 1} + \dfrac{1}{k!}$$ $$ > t_{k - 1}$$, since
+$$\dfrac{1}{k!} > 0$$, and $$t_1 = 1$$.
+
+Hence, the sequence $$(t_n)_{n=1}^\infty$$ is nondecreasing, where, $$t_1 < t_2$$
+$$ < ... < t_{k - 1}$$ $$ < t_k < t_{k + 1}$$ $$ < ...$$. $$\blacksquare$$
