@@ -1,0 +1,42 @@
+---
+layout: page
+title: Richard Goldberg Exercise 2.6 Q10(b)
+description: Discusses the given question, the intuition behind the proof, and the proof itself
+---
+
+In this section, I will discuss the given question, the intuition behind the proof, and the
+proof itself.
+
+---
+
+_**Question**_
+
+For $$n \in \mathbb{N}$$, let $$t_n = 1 + \dfrac{1}{1!} + \dfrac{1}{2!} + ... + \dfrac{1}{n!}$$.
+
+Using only facts established in the proof of 2.6C, prove that $$(t_n)_{n=1}^\infty$$ is bounded
+above and then prove that
+$$\lim\limits_{n \to \infty} t_n \geqslant \lim\limits_{n \to \infty} \left(1 + \dfrac{1}{n}\right)^n$$.
+
+[//]: # _**Intuition**_
+
+_**Proof**_
+
+(WTS: $$(t_n)_{n=1}^\infty$$ is bounded above)
+
+$$t_n = 1 + \dfrac{1}{1!} + \dfrac{1}{2!} + ... + \dfrac{1}{n!}$$
+$$ = 1 + 1 + \dfrac{1}{1 \cdot 2} + \dfrac{1}{1 \cdot 2 \cdot 3} + ... + \dfrac{1}{1 \cdot 2 \cdot \cdot \cdot n}$$
+$$ \leqslant 1 + 1 + \dfrac{1}{2} + \dfrac{1}{2^2} + ... + \dfrac{1}{2^{n - 1}}$$
+$$ = 1 + \dfrac{1 - \left(\dfrac{1}{2}\right)^n}{1 - \dfrac{1}{2}} < 1 + \dfrac{1}{1 - \dfrac{1}{2}}$$
+$$ = 3$$
+
+Hence, $$(t_n)_{n=1}^\infty$$ is bounded above, where in particular, $$3$$ is an upper
+bound.
+
+Also, we note that $$s_n \leqslant t_n$$ $$(\forall n \in \mathbb{N})$$, from the proof
+of 2.6C
+$$\left[(s_n)_{n=1}^\infty = \left(\left(1 + \dfrac{1}{n}\right)^n\right)_{n=1}^\infty\right]$$.
+
+Since, that is the case, from [Qns 3](/richardgoldbergqns0000000013),
+$$\lim\limits_{n \to \infty} s_n \leqslant \lim\limits_{n \to \infty} t_n$$, as
+$$(s_n)_{n=1}^\infty$$ and $$(t_n)_{n=1}^\infty$$ are nondecreasing, bounded sequences too.
+$$\blacksquare$$
