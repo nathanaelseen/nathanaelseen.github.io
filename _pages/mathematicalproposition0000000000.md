@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Mathematical Proposition
+title: sup(A + B) = supA + sup B
 description: Discusses the given proposition, the intuition behind the proof, and the proof itself
 ---
 
@@ -9,9 +9,9 @@ proof itself.
 
 ---
 
-_**Question**_
+_**Proposition**_
 
-Let $$A$$ and $$B$$ be nonempty subsets of $$\mathbb{R}$$ that are  both bounded above.
+Let $$A$$ and $$B$$ be nonempty subsets of $$\mathbb{R}$$ that are both bounded above.
 
 Define, $$A + B = \{a + b: a \in A, b \in B\}$$.
 

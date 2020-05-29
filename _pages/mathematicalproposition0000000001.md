@@ -1,0 +1,35 @@
+---
+layout: page
+title: Infinitude of Prime Numbers
+description: Discusses the given proposition, the intuition behind the proof, and the proof itself
+---
+
+In this section, I will discuss the given proposition, the intuition behind the proof, and the
+proof itself.
+
+---
+
+_**Proposition**_
+
+The set of prime numbers is infinite.
+
+[//]: # _**Intuition**_
+
+_**Proof**_
+
+Assume the contrary, that the set of primes are finite instead.
+
+Then, we can list the primes in such fashion; $$S = \{p_1, p_2, ..., p_k\}$$, for some
+$$k \in \mathbb{N}$$, where $$k$$ is finite.
+
+Let, $$N = (p_1 \cdot p_2 \cdot ... \cdot p_k) + 1$$.
+
+Then, since $$N > 1$$ obviously, there exists a prime $$q \in \mathbb{R} \ni q \mid N$$.
+
+In fact, $$q \in S$$, since the set of primes is finite, by our hypothesis.
+
+Hence, $$q \mid (p_1 \cdot p_2 \cdot ... \cdot p_k)$$.
+
+But, $$q \nmid (p_1 \cdot p_2 \cdot ... \cdot p_k) + 1 = N$$ $$ => q \nmid N$$.
+
+But, this Contradicts our previous assertion that $$q \mid N$$. $$\blacksquare$$
