@@ -116,6 +116,7 @@ function autocompleteSearchSuggestions() {
         b = document.createElement("DIV");
         b.innerHTML += "Suggestions:";
         b.innerHTML += "<ul><li>NUS Module Review</li><li>Richard Goldberg Solutions</li><li>Fields</li><li>Computability</li></ul>";
+        b.style.cursor = "default";
 
         a.appendChild(b);
     })
@@ -139,6 +140,7 @@ function autocompleteSearchSuggestions() {
             b = document.createElement("DIV");
             b.innerHTML += "Suggestions:";
             b.innerHTML += "<ul><li>NUS Module Review</li><li>Richard Goldberg Solutions</li><li>Fields</li><li>Computability</li></ul>";
+            b.style.cursor = "default";
 
             a.appendChild(b);
 
@@ -296,6 +298,7 @@ function autocompleteSearchSuggestions() {
             b = document.createElement("DIV");
             b.innerHTML += "Suggestions:";
             b.innerHTML += "<ul><li>NUS Module Review</li><li>Richard Goldberg Solutions</li><li>Fields</li><li>Computability</li></ul>";
+            b.style.cursor = "default";
 
             a.appendChild(b);
 
