@@ -35,9 +35,9 @@ $$\lvert a \rvert - \lvert b \rvert$$ or $$\lvert b \rvert - \lvert a \rvert$$,
 then, $$\lvert \lvert a \rvert - \lvert b \rvert \rvert \leqslant \lvert a - b \rvert$$.
 $$\blacksquare$$
 
-Let $$\epsilon > 0$$, be given.
+Let $$\varepsilon > 0$$, be given.
 
 Since, $$(s_n)_{n=1}^\infty$$ converges to $$L$$,
-$$\exists N \in \mathbb{N} \ni \lvert s_n - L \rvert < \epsilon$$ $$(n \geqslant N)$$.
+$$\exists N \in \mathbb{N} \ni \lvert s_n - L \rvert < \varepsilon$$ $$(n \geqslant N)$$.
 
 Hence, $$\lim\limits_{n \to \infty} \lvert s_n \rvert = \lvert L \rvert$$. $$\blacksquare$$

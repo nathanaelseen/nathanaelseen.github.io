@@ -18,7 +18,7 @@ is not bounded.
 
 _**Proof**_
 
-Let $$\epsilon > 0$$, be given.
+Let $$\varepsilon > 0$$, be given.
 
 Also, assume the contrary, that $$(s_n)_{n=1}^\infty$$ is bounded.
 
@@ -27,17 +27,17 @@ $$(\forall n_1 \in \mathbb{N})$$.
 
 (In particular, let's claim that $$\lim\limits_{n \to \infty} \left(\dfrac{s_n}{n}\right) = 0$$.)
 
-Pick, $$N \in \mathbb{N} \ni N > \dfrac{M}{\epsilon}$$ $$ <=> N\epsilon > M$$
-$$ <=> N\epsilon > s_{n_1}$$ $$ <=> s_{n_1} < N\epsilon$$
-$$ <=> \dfrac{s_{n_1}}{N} < \epsilon$$
-$$ <=> \left\lvert \dfrac{s_{n_1}}{N} \right\rvert < \epsilon$$ $$(\forall n_1 \in \mathbb{N})$$
+Pick, $$N \in \mathbb{N} \ni N > \dfrac{M}{\varepsilon}$$ $$ <=> N\varepsilon > M$$
+$$ <=> N\varepsilon > s_{n_1}$$ $$ <=> s_{n_1} < N\varepsilon$$
+$$ <=> \dfrac{s_{n_1}}{N} < \varepsilon$$
+$$ <=> \left\lvert \dfrac{s_{n_1}}{N} \right\rvert < \varepsilon$$ $$(\forall n_1 \in \mathbb{N})$$
 
 Thus, for $$n \geqslant N$$,
 $$\left\lvert \dfrac{1}{n} \right\rvert \leqslant \left\lvert \dfrac{1}{N} \right\rvert$$
 $$ => \left\lvert \dfrac{s_{n_1}}{n} \right\rvert \leqslant \left\lvert \dfrac{s_{n_1}}{N} \right\rvert$$
-$$ < \epsilon$$ $$(\forall n_1 \in \mathbb{N})$$.
+$$ < \varepsilon$$ $$(\forall n_1 \in \mathbb{N})$$.
 
-Hence, we have found an $$N$$, where, $$\left\lvert \dfrac{s_{n_1}}{n} - 0 \right\rvert < \epsilon$$
+Hence, we have found an $$N$$, where, $$\left\lvert \dfrac{s_{n_1}}{n} - 0 \right\rvert < \varepsilon$$
 $$(n \geqslant N$$, and $$\forall n_1 \in \mathbb{N})$$.
 
 Thus, $$\lim\limits_{n \to \infty} \dfrac{s_n}{n} = 0$$, as needed. $$\blacksquare$$

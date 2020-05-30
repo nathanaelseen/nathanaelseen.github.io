@@ -27,8 +27,8 @@ Also, we note that $$L_1 = \sup\{s_1, s_2, ...\}$$, and $$L_2 = \sup\{t_1, t_2, 
 
 Assume, the contrary, that $$L_1 > L_2$$, instead.
 
-Then, $$L_1 - \epsilon = L_2$$, is not an u.b of $$\{s_1, s_2, ...\}$$
-(for $$\epsilon > 0$$).
+Then, $$L_1 - \varepsilon = L_2$$, is not an u.b of $$\{s_1, s_2, ...\}$$
+(for $$\varepsilon > 0$$).
 
 Thus, $$\exists k \ni L_2 < s_k$$.
 

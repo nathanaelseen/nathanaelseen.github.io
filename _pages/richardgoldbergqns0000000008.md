@@ -24,17 +24,17 @@ $$ = \dfrac{\left(\sqrt{n + 1}\right)\left(\sqrt{n + 1} + \sqrt{n}\right) - \sqr
 $$ = \dfrac{(n + 1) + \sqrt{n(n + 1)} - \sqrt{n(n + 1)} - n}{\sqrt{n + 1} + \sqrt{n}}$$
 $$ = \dfrac{1}{\sqrt{n + 1} + \sqrt{n}} \leqslant \dfrac{1}{2 \sqrt{n}}$$.
 
-Now, let, $$\epsilon > 0$$, be given.
+Now, let, $$\varepsilon > 0$$, be given.
 
-Pick, $$N \in \mathbb{N} \ni N > {\left(\dfrac{1}{2\epsilon}\right)}^2$$
-$$ <=> {\left(\dfrac{1}{2\epsilon}\right)}^2 < N$$ $$ <=> \dfrac{1}{2\epsilon} < \sqrt{N}$$
-$$ <=> 1 < \epsilon \left(2 \sqrt{N}\right)$$ $$ <=> \dfrac{1}{2 \sqrt{N}} < \epsilon$$
-$$ <=> \left\lvert \dfrac{1}{2 \sqrt{N}} - 0 \right\rvert < \epsilon$$.
+Pick, $$N \in \mathbb{N} \ni N > {\left(\dfrac{1}{2\varepsilon}\right)}^2$$
+$$ <=> {\left(\dfrac{1}{2\varepsilon}\right)}^2 < N$$ $$ <=> \dfrac{1}{2\varepsilon} < \sqrt{N}$$
+$$ <=> 1 < \varepsilon \left(2 \sqrt{N}\right)$$ $$ <=> \dfrac{1}{2 \sqrt{N}} < \varepsilon$$
+$$ <=> \left\lvert \dfrac{1}{2 \sqrt{N}} - 0 \right\rvert < \varepsilon$$.
 
 Then, for $$n \geqslant N$$, $$\dfrac{1}{n} \leqslant \dfrac{1}{N}$$
 $$ <=> \dfrac{1}{2 \sqrt{n}} \leqslant \dfrac{1}{2 \sqrt{N}}$$
-$$ <=> \left\lvert \dfrac{1}{2 \sqrt{n}} - 0 \right\rvert \leqslant \left\lvert \dfrac{1}{2 \sqrt{N}} - 0 \right\rvert < \epsilon$$
-$$ => \left\lvert \dfrac{1}{2 \sqrt{n}} - 0 \right\rvert < \epsilon$$
-$$ => \left\lvert \left(\sqrt{n + 1} - \sqrt{n}\right) - 0 \right\rvert < \epsilon$$.
+$$ <=> \left\lvert \dfrac{1}{2 \sqrt{n}} - 0 \right\rvert \leqslant \left\lvert \dfrac{1}{2 \sqrt{N}} - 0 \right\rvert < \varepsilon$$
+$$ => \left\lvert \dfrac{1}{2 \sqrt{n}} - 0 \right\rvert < \varepsilon$$
+$$ => \left\lvert \left(\sqrt{n + 1} - \sqrt{n}\right) - 0 \right\rvert < \varepsilon$$.
 
 Thus, $$\lim\limits_{n \to \infty} \left(\sqrt{n + 1} - \sqrt{n}\right) = 0$$. $$\blacksquare$$

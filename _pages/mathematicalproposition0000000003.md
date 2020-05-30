@@ -1,0 +1,93 @@
+---
+layout: page
+title: Proposition:<br/> For \(s_{n + 1}\) \( = s_n \) \( + \dfrac{1}{2}(x - {s_n}^2)\), prove that \(s_n\) converges
+description: Discusses the given proposition, the intuition behind the proof, and the proof itself
+---
+
+In this section, I will discuss the given proposition, the intuition behind the proof, and the
+proof itself.
+
+---
+
+_**Proposition**_
+
+Let $$x$$ be a real number so that $$0 \leqslant x$$ $$ \leqslant 1$$. Define a
+sequence $$(s_n)_{n=1}^\infty$$ by $$s_1 = 0$$,
+$$s_{n + 1} = s_n + \dfrac{1}{2}(x - {s_n}^2)$$ for $$n \in \mathbb{N}$$.
+
+Show that $$(s_n)_{n=1}^\infty$$ is a monotone bounded sequence and hence converges
+to some $$s \in \mathbb{R}$$. Show that $$s^2 = x$$.
+
+[//]: # _**Intuition**_
+
+_**Proof**_
+
+First, we show that $$s_n$$ is bounded above.
+
+(Claim: $$s_n \leqslant 1$$ $$(\forall n \in \mathbb{N})$$
+
+Base Case:
+
+$$s_1 = 0$$ $$ \leqslant 1$$, is obviously true.
+
+Inductive Case:
+
+Assume inductively, that, $$s_k \leqslant 1$$.
+
+Then, $$s_{k + 1} = s_k + \dfrac{1}{2}(x- {s_k}^2)$$
+$$ = s_k + \dfrac{1}{2}x - \dfrac{1}{2}{s_k}^2$$
+$$ = s_k - \dfrac{1}{2}{s_k}^2 + \dfrac{1}{2}x$$
+$$ = -\left(\dfrac{1}{2}{s_k}^2 - s_k\right) + \dfrac{1}{2}x$$
+$$ = -\left(\dfrac{1}{2}(s_k - 1)^2\right) + \dfrac{1}{2} + \dfrac{1}{2}x$$
+$$ = \dfrac{1}{2} - \dfrac{1}{2}(s_k - 1)^2 + \dfrac{1}{2}x$$
+$$ \leqslant \dfrac{1}{2} + \dfrac{1}{2}x$$ $$ \leqslant 1$$ (since, $$x \leqslant 1$$).
+
+Hence, this shows that $$s_n \leqslant 1$$ $$(\forall n \in \mathbb{N})$$, is
+bounded above (by 1).
+
+Next, we show monotonicity, specifically, that $$(s_n)_{n=1}^\infty$$ is nondecreasing.
+
+(Claim: $$s_n \leqslant s_{n + 1}$$)
+
+Base Case:
+
+$$s_1 = 0$$ $$ \leqslant s_1 = 0 + \dfrac{1}{2}(x - 0^2)$$
+$$ = \dfrac{1}{2}x$$ (where $$0 \leqslant x$$ $$ \leqslant 1$$).
+
+Inductive Case:
+
+Inductively, assume that, $$s_k \leqslant s_{k + 1}$$, then, we note that,
+
+$$s_{k + 1} = s_k + \dfrac{1}{2}(x - {s_k}^2)$$ $$ ...(1)$$
+
+$$s_{k + 2} = s_{k + 1} + \dfrac{1}{2}(x - {s_{k + 1}}^2)$$ $$ ...(2)$$.
+
+$$(2) - (1) = s_{k + 2} - s_{k + 1}$$
+$$ = s_{k + 1} + \dfrac{1}{2}(x - {s_{k + 1}}^2) - \left(s_k + \dfrac{1}{2}(x - {s_k}^2)\right)$$
+$$ = s_{k + 1} + \dfrac{1}{2}(x - {s_{k + 1}}^2) - s_k - \dfrac{1}{2}(x - {s_k}^2)$$
+$$ = s_{k + 1} + \dfrac{1}{2}x - \dfrac{1}{2}{s_{k + 1}}^2 - s_k - \dfrac{1}{2}x + \dfrac{1}{2}{s_k}^2$$
+$$ = (s_{k + 1} - s_k) - \dfrac{1}{2}({s_{k + 1}}^2 - {s_k}^2)$$
+$$ = (s_{k + 1} - s_k) - \dfrac{1}{2}[(s_{k + 1} + s_k)(s_{k + 1} - s_k)]$$
+$$ = (s_{k + 1} - s_k)\left(1 - \dfrac{1}{2}(s_{k + 1} + s_k)\right)$$ $$ ...(3)$$
+
+But, since, we know that $$s_n \leqslant 1$$ $$(\forall n \in \mathbb{N})$$,
+$$s_k + s_{k + 1} \leqslant 2$$ $$ => \dfrac{1}{2}(s_k + s_{k + 1}) \leqslant 1$$
+$$ => 1 - \dfrac{1}{2}(s_k + s_{k + 1}) \geqslant 0$$.
+
+Also, $$s_{k + 1} - s_k \geqslant 0$$, from our inductive hypothesis; $$s_k \leqslant s_{k + 1}$$.
+
+Thus, $$s_{k + 2} - s_{k + 1} = (3)$$ $$ \geqslant 0$$ $$ => s_{k + 2} - s_{k + 1} \geqslant 0$$
+$$ => s_{k + 2} \geqslant s_{k + 1}$$ $$ => s_{k + 1} \leqslant s_{k + 2}$$.
+
+Hence, this proves that $$(s_n)_{n=1}^\infty$$ is nondecreasing.
+
+Thus, since $$(s_n)_{n=1}^\infty$$ is nondecreasing and bounded above, it is convergent to some
+$$s \in \mathbb{R}$$.
+
+Now, take limits on both sides of this equation;
+$$s_{n + 1} = s_n + \dfrac{1}{2}(x - {s_n}^2)$$, and we obtain,
+$$\lim\limits_{n \to \infty} s_{n + 1} = \lim\limits_{n \to \infty}\left(s_n + \dfrac{1}{2}(x - {s_n}^2)\right)$$
+$$ => \lim\limits_{n \to \infty} s_{n + 1} = \lim\limits_{n \to \infty} s_n + \dfrac{1}{2}\lim\limits_{n \to \infty} x - \dfrac{1}{2}\lim\limits_{n \to \infty} {s_n}^2$$
+$$ => s = s + \dfrac{1}{2}x - \dfrac{1}{2}s^2$$
+(since,  $$(s_{n + 1})_{n=1}^\infty$$ is a subsequence of $$(s_n)_{n=1}^\infty$$)
+$$ => \dfrac{1}{2}s^2 = \dfrac{1}{2}x$$ $$ => s^2 = x$$, as needed. $$\blacksquare$$

@@ -11,26 +11,27 @@ proof itself.
 
 _**Question**_
 
-If $$L \in \mathbb{R}$$, $$M \in \mathbb{R}$$, and $$L \leqslant M + \epsilon$$ for every
-$$\epsilon > 0$$, prove that $$L \leqslant M$$.
+If $$L \in \mathbb{R}$$, $$M \in \mathbb{R}$$, and $$L \leqslant M + \varepsilon$$ for every
+$$\varepsilon > 0$$, prove that $$L \leqslant M$$.
 
 [//]: # _**Intuition**_
 
 _**Proof**_
 
-Let $$\epsilon > 0$$, be given.
+Let $$\varepsilon > 0$$, be given.
 
 Suppose the contary, that $$L > M$$.
 
-Also, by the hypothesis, $$L \leqslant M + \epsilon$$.
+Also, by the hypothesis, $$L \leqslant M + \varepsilon$$.
 
-Thus, $$M < L \leqslant M + \epsilon$$ $$ => M - \epsilon < L \leqslant M + \epsilon$$
-(since $$\epsilon > 0$$) $$ => \lvert L - M \rvert < \epsilon$$ $$(\forall \epsilon > 0)$$.
+Thus, $$M < L \leqslant M + \varepsilon$$ $$ => M - \varepsilon < L \leqslant M + \varepsilon$$
+(since $$\varepsilon > 0$$)
+$$ => \lvert L - M \rvert < \varepsilon$$ $$(\forall \varepsilon > 0)$$.
 
 We note that since $$L > M$$, by our assumption, $$\lvert L - M \rvert > 0$$.
 
-But, in particular, pick an $$\epsilon_a < \lvert L - M \rvert < \epsilon_a$$.
+But, in particular, pick an $$\varepsilon_a < \lvert L - M \rvert < \varepsilon_a$$.
 
-Thus, $$\epsilon_a < \epsilon_a$$, which is a Contradiction.
+Thus, $$\varepsilon_a < \varepsilon_a$$, which is a Contradiction.
 
 Hence, the theorem is true. $$\blacksquare$$

@@ -23,17 +23,17 @@ _**Intuition**_
 
 _**Proof**_
 
-Let $$\epsilon > 0$$, be given.
+Let $$\varepsilon > 0$$, be given.
 
-Since $$(t_n)_{n=1}^{\infty}$$ is Cauchy, $$\exists N \in \mathbb{N} \ni \lvert t_m - t_n \rvert < \epsilon$$
+Since $$(t_n)_{n=1}^{\infty}$$ is Cauchy, $$\exists N \in \mathbb{N} \ni \lvert t_m - t_n \rvert < \varepsilon$$
 $$(m,n \geqslant N)$$.
 
 But, we note that, $$\lvert s_m - s_n \rvert = \lvert (a_1 + ... + a_m) - (a_1 + ... + a_n) \rvert$$
 $$ = \lvert a_n + a_{n + 1} +  ... + a_m \rvert$$
 $$ \leqslant \lvert a_n \rvert + \lvert a_{n + 1} \rvert + ... + \lvert a_m \rvert$$
-$$ = t_m - t_n = \lvert t_m - t_n \rvert$$ $$ < \epsilon$$ $$(m, n \geqslant N)$$.
+$$ = t_m - t_n = \lvert t_m - t_n \rvert$$ $$ < \varepsilon$$ $$(m, n \geqslant N)$$.
 
-Thus, $$\lvert s_m - s_n \rvert < \epsilon$$
+Thus, $$\lvert s_m - s_n \rvert < \varepsilon$$
 $$(m, n \geqslant N)$$.
 
 Hence, $$(s_n)_{n=1}^{\infty}$$ is Cauchy. $$\blacksquare$$

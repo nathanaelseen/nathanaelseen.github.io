@@ -11,7 +11,7 @@ proof itself.
 
 _**Question**_
 
-Suppose $$(s_n)_{n=1}^\infty$$ is a sequence of positive numbers and $$0 < x < 1$$. If
+Suppose $$(s_n)_{n=1}^\infty$$ is a sequence of positive numbers and $$0 < x$$ $$ < 1$$. If
 $$s_{n + 1} < xs_n$$ $$(\forall n \in \mathbb{N})$$, prove $$\lim\limits_{n \to \infty} s_n = 0$$.
 
 [//]: # _**Intuition**_

@@ -22,15 +22,15 @@ $$L$$ also.)
 
 _**Proof**_
 
-Let $$\epsilon > 0$$, be given.
+Let $$\varepsilon > 0$$, be given.
 
 Since, $$\lim\limits_{m \to \infty} s_{2m} = L$$,
-$$\exists N_1 \in \mathbb{N} \ni \lvert s_{2m} - L \rvert < \epsilon$$ $$(2m \geqslant N_1)$$.
+$$\exists N_1 \in \mathbb{N} \ni \lvert s_{2m} - L \rvert < \varepsilon$$ $$(2m \geqslant N_1)$$.
 
 Similarly, since, $$\lim\limits_{m \to \infty} s_{2m - 1} = L$$,
-$$\exists N_2 \in \mathbb{N} \ni \lvert s_{2m - 1} - L \rvert < \epsilon$$ $$(2m - 1 \geqslant N_2)$$.
+$$\exists N_2 \in \mathbb{N} \ni \lvert s_{2m - 1} - L \rvert < \varepsilon$$ $$(2m - 1 \geqslant N_2)$$.
 
-Set $$N = max\{N_1, N_2\}$$, then, in both cases, where $$m$$ is odd or even,
-$$\exists N \in \mathbb{N} \ni \lvert s_m - L \rvert < \epsilon$$ $$(m \geqslant N)$$.
+Set $$N = \max\{N_1, N_2\}$$, then, in both cases, where $$m$$ is odd or even,
+$$\exists N \in \mathbb{N} \ni \lvert s_m - L \rvert < \varepsilon$$ $$(m \geqslant N)$$.
 
 Hence, $$\lim\limits_{m \to \infty} s_m = L$$, as needed. $$\blacksquare$$
