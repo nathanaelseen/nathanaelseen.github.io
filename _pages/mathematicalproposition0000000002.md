@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Proposition:<br/> <h2>There is no largest integer</h2>
+title: Proposition:<br/> There is no largest integer
 description: Discusses the given proposition, the intuition behind the proof, and the proof itself
 ---
 
