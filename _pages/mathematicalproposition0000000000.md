@@ -1,6 +1,6 @@
 ---
 layout: page
-title: sup(A + B) = supA + sup B
+title: Proposition:<br/> <h2>sup(A + B) = supA + sup B</h2>
 description: Discusses the given proposition, the intuition behind the proof, and the proof itself
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Infinitude of Prime Numbers
+title: Proposition:<br/> <h2>Infinitude of Prime Numbers</h2>
 description: Discusses the given proposition, the intuition behind the proof, and the proof itself
 ---
 
