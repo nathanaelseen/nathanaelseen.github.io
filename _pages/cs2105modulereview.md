@@ -89,8 +89,9 @@ formulation of algorithms to solve those problems and to handle all the edge-cas
 However, as I’ve mentioned, these algorithms should not involve those advanced data
 structures we learnt in CS2040S.
 
-Also, another thing to note, were the labs were in Python, a type-insensitive
-language, close to Source/JavaScript which we’ve learnt in CS1101S.
+Also, another thing to note, were that the labs were in Python (although you could
+use Java or C++ if you wish), a type-insensitive language, close to Source/JavaScript
+which we’ve learnt in CS1101S.
 
 Mainly, we used the imperative programming style to solve the lab problems, as like
 the CS2106 and CS2100 labs, so it should not involve the declarative style and
