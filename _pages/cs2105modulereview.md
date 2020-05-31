@@ -59,7 +59,7 @@ advanced data structures, such as; Binary Heaps, Binary Search Trees, and Hash T
 
 **Some study tips (my two cents worth):**
 
-Prior to this module, we’ve always take for granted Computer Networks and the
+Prior to this module, we always take for granted Computer Networks and the
 data transfer across it, treating it as yet another abstraction.
 
 But this module offers a rather comprehensive overview of the underlying
@@ -76,8 +76,8 @@ midterms or the exams, as this is a CS mod after all.
 For the midterms and exams, there were around 40% mathy questions which were
 used to validate our understanding of the concepts.
 
-On the whole, the midterms and exams, were pretty manageable with some trick
-questions.
+On the whole, the midterms and exams, were pretty manageable, although
+there were some trick questions.
 
 Doing sufficient PYP’s should help in getting the hang of the questions.
 
@@ -90,7 +90,7 @@ However, as I’ve mentioned, these algorithms should not involve those advanced
 structures we learnt in CS2040S.
 
 Also, another thing to note, were that the labs were in Python (although you could
-use Java or C++ if you wish), a type-insensitive language, close to Source/JavaScript
+use Java or C++ if you prefer), a type-insensitive language, close to Source/JavaScript
 which we’ve learnt in CS1101S.
 
 Mainly, we used the imperative programming style to solve the lab problems, as like
@@ -101,7 +101,7 @@ It might be a good idea to read-up on some basic Python, to familiarise with the
 various language-specific constructs such as the syntax for variables, arrays,
 loops, functions, debugging statements, etc.
 
-I think that’s pretty much it for the contents and assessments.
+I think that’s pretty much it, for the contents and assessments.
 
 Finally, in my opinion, I do not think the recommended textbook is necessary in
 understanding the concepts, although it’s nice to have as a supplementary material,
