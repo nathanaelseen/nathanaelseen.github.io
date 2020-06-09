@@ -156,4 +156,4 @@ Difficulty: 10/10
 
 Expected Grade: D
 
-Actual Grade: (to be updated)
+Actual Grade: B
