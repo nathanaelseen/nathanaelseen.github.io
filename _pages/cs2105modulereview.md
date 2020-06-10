@@ -115,4 +115,4 @@ Difficulty: 6/10
 
 Expected Grade: B+
 
-Actual Grade: (to be updated)
+Actual Grade: B+
