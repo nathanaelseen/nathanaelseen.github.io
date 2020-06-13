@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Home
-description: Your one-stop Wiki for any Mathematics stuffs
+description: Your one-stop Wiki for all the Math stuffs
 ---
 
 Hi, thank you for visiting my personal website.
