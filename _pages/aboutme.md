@@ -16,4 +16,4 @@ This is also due to my passion in Mathematics as well.
 
 _As an aside, I'm also looking for Computer Science internship opportunities and jobs._
 
-Feel free to reach out to me at my [email](mailto:coderatwork64@gmail.com).
+Feel free to contact me at my [email](mailto:coderatwork64@gmail.com).
