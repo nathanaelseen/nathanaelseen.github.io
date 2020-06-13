@@ -31,9 +31,9 @@ with the following Axioms defined:
   1. <a name="axiom5"></a>$$\forall a,b \in F, a \cdot b = b \cdot a$$ (commutativity)
   1. <a name="axiom6"></a>$$\forall a,b \in F, (a \cdot b) \cdot c = a \cdot (b \cdot c)$$ (associativity)
   1. <a name="axiom7"></a>$$\forall a \in F, a \cdot u = a$$ (Multiplicative identity axiom)
-  1. $$\forall a \in F, \exists b \in F \ni a \cdot b = u$$ (existence of an Multiplicative inverse)
+  1. $$\forall a \in F$$, $$\exists b \in F \ni a \cdot b = u$$ (existence of an Multiplicative inverse)
 
-  1. <a name="axiom9"></a>$$\forall a,b,c \in F, a \cdot (b + c) = a \cdot b + a \cdot c$$ (distributivity)
+  1. <a name="axiom9"></a>$$\forall a,b,c \in F$$, $$a \cdot (b + c) = a \cdot b + a \cdot c$$ (distributivity)
 
 Some common examples of fields include; $$\mathbb{N}$$, $$\mathbb{Q}$$, $$\mathbb{R}$$, and $$\mathbb{C}$$, where in
 particular, $$\mathbb{N} \subseteq \mathbb{Q} \subseteq \mathbb{R} \subseteq \mathbb{C}$$.
