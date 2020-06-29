@@ -76,20 +76,20 @@ Although compilers are able to flag out obvious semantical errors which could le
 unreachable statements, bugs, and infinite loops, they are just but a weak attempt
 in solving the halting problem.
 
-Here's when a computer scientist need to manually performs algorithm analysis
+Here's when a computer scientist need to manually performs algorithm analysis,
 to formally proof that an algorithm actually terminates. Hence, we note that
-the burden is on the computer scientist to inspect and analyse the code (however
+the burden lies on the computer scientist to inspect and analyse the code (however
 long and complicated it might be).
 
 Also, we note that we cannot employ the assistance of a computer, as the
 Halting Problem tells us so!
 
-The halting problem, and other non-computable problems reducible to the
+The Halting Problem, and other non-computable problems reducible to the
 Halting Problem impedes the advancement of computer science.
 
 For example, in research, the Halting Problem could either lengthen the
-duration of a research (due to manual work/verification which cannot be automated),
-or perhaps render the whole researched problem non-computable too.
+duration of a research (due to manual work/verification which cannot be
+automated), or perhaps render the whole researched problem non-computable too!
 
 _References_
 

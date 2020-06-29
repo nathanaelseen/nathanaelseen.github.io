@@ -31,7 +31,7 @@ Some examples include (from the least to most powerful):
    by [Alan Turing](https://en.wikipedia.org/wiki/Alan_Turing) himself)
 
 Despite these powerful and potentially ‘infinite’ ‘computers’, the Halting Problem
-(more details discussed in another article), is an example of a non-computable problem.
+(more details discussed in this [article](../the_halting_problem)), is an example of a non-computable problem.
 
 You might be wondering then; is this non-computability due to the (limited) design?
 
