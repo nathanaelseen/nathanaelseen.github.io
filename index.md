@@ -4,8 +4,10 @@ title: Home
 description: Your one-stop Wiki for all the Math stuffs
 ---
 
-Hi, thank you for visiting my personal website.
+Welcome to this site.
 
-I write extensively on **Mathematics** in this site, admist other things.
+I write extensively on **Mathematics** in this website, admist other things.
 
 Just treat this site, as your one-stop _Wiki_ for all the Math stuffs.
+
+~ Nathanael
