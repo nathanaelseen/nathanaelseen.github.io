@@ -13,4 +13,4 @@ my free time.
 
 Just treat this site, as your one-stop _Wiki_ for all the Math stuffs.
 
-~ Nathanael
+~ Nathanael Seen
