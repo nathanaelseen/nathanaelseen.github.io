@@ -31,10 +31,10 @@ On the contrary, there are also undecidable problems, which are totally non-comp
 and the Halting Problem is a classic example.
 
 The Halting Problem is non-computable on all (Mathematical) models of computation,
-even on the most powerful [Turing Machine (TM)](modelsofcomputation/#turingmachine).
+even on the most powerful [Turing Machine (TM)](../models_of_computation/#turingmachine).
 
 As an interesting aside, the computers we use today are not exactly TMs, but a less
-powerful variant: the [Finite State Machines (FSM)](modelsofcomputation/#finitestatemachine),
+powerful variant: the [Finite State Machines (FSM)](../models_of_computation/#finitestatemachine),
 which unlike TMs, have a finite number of states.
 
 In an FSM, the halting problem is theoretically decidable as a non-terminating program
@@ -52,7 +52,7 @@ all cases.
 
 Now, we also note that non-computability is not due to the limitations in the
 design of those Mathematical models of comptuation, but rather, non-computability stems
-from a [limitation in Mathematics](modelsofcomputation/#godelincompletenesstheorem).
+from a [limitation in Mathematics](../models_of_computation/#godelincompletenesstheorem).
 
 Gödel’s first incompleteness theorem (Mathematics), states that a mathematical system
 cannot prove its own consistency (although it might be able to proof its own
