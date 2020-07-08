@@ -28,6 +28,7 @@ This catalogue covers selected Richard Goldberg Solutions.
   1. [Richard Goldberg Exercise 2.7 Q4](0000000017)
   1. [Richard Goldberg Exercise 2.7 Q10(a)](0000000018)
   1. [Richard Goldberg Exercise 2.7 Q10(b)](0000000019)
+  1. [Richard Goldberg Exercise 2.7 Q10(c)](0000000020)
   1. [Richard Goldberg Exercise 2.10 Q6](0000000000)
 
 ## Publications
