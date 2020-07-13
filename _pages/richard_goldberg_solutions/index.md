@@ -9,6 +9,8 @@ This catalogue covers selected Richard Goldberg Solutions.
 ---
 
 ## Questions
+  1. [Richard Goldberg Exercise 1.7 Q1](0000000021)
+  1. [Richard Goldberg Exercise 1.7 Q2](0000000022)
   1. [Richard Goldberg Exercise 2.1 Q5](0000000001)
   1. [Richard Goldberg Exercise 2.1 Q6](0000000002)
   1. [Richard Goldberg Exercise 2.2 Q1](0000000003)

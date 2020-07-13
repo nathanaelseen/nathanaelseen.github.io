@@ -19,15 +19,15 @@ Notionally, these Mathematical models of Computation could be perceived as abstr
 forms of Computers.
 
 Some examples include (from the least to most powerful):
- - Combinational Logic (includes basic digital circuitry, designed using Boolean Algebra)
- - Push-down Automata
- - <a name="finitestatemachine"></a> Finite State Machines (FSM):
-   - (Examples include PCs, Laptops, Mobile Phones. These devices have (finite) RAM slots,
+  - Combinational Logic (includes basic digital circuitry, designed using Boolean Algebra)
+  - Push-down Automata
+  - <a name="finitestatemachine"></a> Finite State Machines (FSM):
+    - (Examples include PCs, Laptops, Mobile Phones. These devices have (finite) RAM slots,
       hence States, and when all slots are used, the Computer would need to free up some
       slots and therefore reuse those slots, or States. Hence the term Finite State
       Machines.)
- - Context-Free Grammer/Languages
- - <a name="turingmachine"></a> Turing Machine (most powerful model, invented
+  - Context-Free Grammer/Languages
+  - <a name="turingmachine"></a> Turing Machine (most powerful model, invented
    by [Alan Turing](https://en.wikipedia.org/wiki/Alan_Turing) himself)
 
 Despite these powerful and potentially ‘infinite’ ‘computers’, the Halting Problem
