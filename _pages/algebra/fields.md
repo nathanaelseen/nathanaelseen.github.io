@@ -98,7 +98,7 @@ in a Field.
 _**Theorem 5**_. <a name="theorem5"></a>$$\forall a, b \in F$$, where $$b \ne e$$,
 $$\exists! x \in F \ni a \cdot x = b$$.
 
-_**Proof**_. By [Theorem 3](#theorem3), $$\forall a \in F$$, $$\exists! y \in F \ni a \cdot y = u$$.
+_**Proof**_. By _[Theorem 3](#theorem3)_, $$\forall a \in F$$, $$\exists! y \in F \ni a \cdot y = u$$.
 Hence, let $$x = y \cdot b$$. Thus, $$a \cdot x = a \cdot (y \cdot b)$$ $$ = (a \cdot y) \cdot b = u \cdot b$$
 $$ = b$$ (by _[Axiom 2](#axiom2)_ and _[Axiom 7](#axiom7)_). $$\blacksquare$$
 
