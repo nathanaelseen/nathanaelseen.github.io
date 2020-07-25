@@ -4,7 +4,7 @@ title: NUS Module Reviews
 description: This catalogue covers NUS Module Reviews by me
 ---
 
-This catalogue covers NUS Module Reviews by me
+This catalogue covers NUS Module Reviews by me.
 
 ---
 
