@@ -8,5 +8,4 @@ This catalogue covers Algebra, a major branch in Mathematics.
 
 ---
 
-## Topics
-  1. [Fields](fields) 
+## Articles
