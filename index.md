@@ -6,11 +6,8 @@ description: Your one-stop Wiki for all the Math stuffs
 
 Dear Reader,
 
-Welcome to this site.
-
-I write extensively on **Mathematics** in this website, among other things, in
-my free time.
-
-Just treat this site, as your one-stop _Wiki_ for all the Math stuffs.
+Welcome to this site. I write extensively on Mathematics in my free time.
+You can find all my mathematical writeups under the `Publications'
+section!
 
 ~ Nathanael Seen
