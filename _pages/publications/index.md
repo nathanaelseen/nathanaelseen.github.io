@@ -1,10 +1,10 @@
 ---
 layout: page
 title: Publications 
-description: This section contains all my mathematical writeups so far!
+description: This section contains my mathematical writeups so far!
 ---
 
-This section contains all my mathematical writeups so far!
+This section contains my mathematical writeups so far!
 
 ---
 
