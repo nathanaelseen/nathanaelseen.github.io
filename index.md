@@ -4,8 +4,6 @@ title: Home
 description: Your Math Wiki
 ---
 
-Dear Reader,
-
 Welcome to this site. I write Mathematics in my free time, you can find
 my mathematical writeups under the `Publications' section!
 
