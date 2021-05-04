@@ -1,12 +1,12 @@
 ---
 layout: page
-title: Publications 
-description: This section contains my mathematical writeups so far!
+title: Analysis 
+description: Mathematical content related to analysis.
 ---
 
 This section contains my mathematical writeups so far!
 
 ---
 
-## Writeups
+## Materials
   1. [Real Analysis](Real Analysis.pdf)
