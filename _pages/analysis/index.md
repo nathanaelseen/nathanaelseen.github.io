@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Analysis 
-description: Mathematical content related to analysis.
+description: Some materials on mathematical analysis.
 ---
 
-This section contains my mathematical writeups so far!
+Some materials on mathematical analysis.
 
 ---
 
 ## Materials
-  1. [Real Analysis](Real Analysis.pdf)
+  1. [Open Sets](Open Sets.pdf)
